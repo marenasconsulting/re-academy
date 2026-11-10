@@ -1,0 +1,11 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Layout } from './components/Layout'
+import { Dashboard } from './pages/Dashboard'
+import { CategoryPage } from './pages/CategoryPage'
+import { LessonPage } from './pages/LessonPage'
+import { QuizPage } from './pages/QuizPage'
+import { NotFound } from './pages/NotFound'
+import './styles.css'
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><BrowserRouter><Routes><Route element={<Layout />}><Route index element={<Dashboard />} /><Route path="kategorien/:categoryId" element={<CategoryPage />} /><Route path="lektionen/:lessonId" element={<LessonPage />} /><Route path="lektionen/:lessonId/quiz" element={<QuizPage />} /><Route path="*" element={<NotFound />} /></Route></Routes></BrowserRouter></React.StrictMode>)

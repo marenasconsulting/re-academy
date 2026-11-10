@@ -1,0 +1,332 @@
+[
+  {
+    "id": "re-einfuehrung",
+    "categoryId": "requirements-engineering",
+    "title": "Was ist Requirements Engineering?",
+    "duration": 8,
+    "status": "available",
+    "introduction": "Gute Lösungen beginnen mit einem klaren Verständnis des Problems. Lerne, wie Requirements Engineering dabei hilft, das Richtige zu entwickeln.",
+    "sections": [
+      {
+        "id": "zweck",
+        "heading": "Erst verstehen, dann entwickeln",
+        "paragraphs": [
+          "Requirements Engineering (RE) ist das systematische Ermitteln, Dokumentieren, Prüfen und Verwalten von Anforderungen. Eine Anforderung beschreibt zum Beispiel, was ein System leisten soll oder welche Qualitätsmerkmale und Rahmenbedingungen es erfüllen muss.",
+          "Ziel ist ein gemeinsames Verständnis zwischen Fachbereich, Entwicklung und weiteren Beteiligten. So sinkt das Risiko, eine technisch funktionierende Lösung zu bauen, die am tatsächlichen Bedarf vorbeigeht."
+        ]
+      },
+      {
+        "id": "rolle",
+        "heading": "Die Rolle des Requirement Engineers",
+        "paragraphs": [
+          "Ein Requirement Engineer verbindet fachliche Bedürfnisse mit der technischen Umsetzung. Dazu spricht er oder sie mit Stakeholdern – also Personen, die das System nutzen, beeinflussen oder von ihm betroffen sind.",
+          "Typische Aufgaben sind Interviews und Workshops, das verständliche Formulieren von Anforderungen sowie das Klären von Widersprüchen. Gemeinsam mit den Beteiligten werden Anforderungen geprüft und priorisiert. Änderungen und ihre Auswirkungen bleiben nachvollziehbar."
+        ]
+      },
+      {
+        "id": "problem",
+        "heading": "Vom Lösungswunsch zum eigentlichen Bedarf",
+        "paragraphs": [
+          "„Wir brauchen einen Export-Button“ ist bereits eine Lösungsidee. Frage zuerst: Wer braucht ihn? Welches Ziel soll damit erreicht werden? Was funktioniert heute nicht?",
+          "Wenn das Problem klar ist, lassen sich verschiedene Lösungen bewerten. Anschließend werden Anforderungen so konkret und prüfbar beschrieben, dass alle Beteiligten erkennen können, wann sie erfüllt sind."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Export-Button – oder doch etwas anderes?",
+      "text": "Der Vertrieb wünscht einen Excel-Export, weil die Erstellung des Wochenberichts zwei Stunden dauert. Im Gespräch wird klar: Benötigt wird eine verlässliche Umsatzübersicht am Montag. Ein automatisch erzeugter Bericht könnte diesen Bedarf besser erfüllen. Eine prüfbare Anforderung wäre: „Das System stellt der Vertriebsleitung jeden Montag bis 8 Uhr die Umsätze der Vorwoche bereit.“"
+    },
+    "takeaway": "Verstehe zuerst das Problem und das Ziel. Formuliere danach gemeinsam verständliche, prüfbare Anforderungen.",
+    "quiz": [
+      {
+        "id": "re-q1",
+        "prompt": "Was ist das zentrale Ziel von Requirements Engineering?",
+        "options": [
+          {
+            "id": "re-q1-0",
+            "text": "Möglichst schnell Programmcode schreiben"
+          },
+          {
+            "id": "re-q1-1",
+            "text": "Ein gemeinsames Verständnis der Anforderungen schaffen"
+          },
+          {
+            "id": "re-q1-2",
+            "text": "Alle Wünsche ohne Prüfung umsetzen"
+          }
+        ],
+        "correctAnswerId": "re-q1-1",
+        "explanation": "RE klärt und sichert das gemeinsame Verständnis darüber, was gebraucht wird und welche Bedingungen gelten."
+      },
+      {
+        "id": "re-q2",
+        "prompt": "Wer ist ein Stakeholder?",
+        "options": [
+          {
+            "id": "re-q2-0",
+            "text": "Nur die Projektleitung"
+          },
+          {
+            "id": "re-q2-1",
+            "text": "Ausschließlich eine Person aus der Entwicklung"
+          },
+          {
+            "id": "re-q2-2",
+            "text": "Eine Person, die das System nutzt, beeinflusst oder von ihm betroffen ist"
+          }
+        ],
+        "correctAnswerId": "re-q2-2",
+        "explanation": "Zum Beispiel sind Anwenderinnen, Fachbereiche, Betrieb und Datenschutz mögliche Stakeholder."
+      },
+      {
+        "id": "re-q3",
+        "prompt": "Der Fachbereich fordert einen Export-Button. Was ist ein sinnvoller erster Schritt?",
+        "options": [
+          {
+            "id": "re-q3-0",
+            "text": "Das zugrunde liegende Problem und Ziel erfragen"
+          },
+          {
+            "id": "re-q3-1",
+            "text": "Sofort die Farbe des Buttons festlegen"
+          },
+          {
+            "id": "re-q3-2",
+            "text": "Den Wunsch ungeprüft an die Entwicklung geben"
+          }
+        ],
+        "correctAnswerId": "re-q3-0",
+        "explanation": "Ein Lösungswunsch verrät noch nicht den eigentlichen Bedarf. Die Frage nach dem Warum eröffnet passende Alternativen."
+      },
+      {
+        "id": "re-q4",
+        "prompt": "Welche Anforderung ist am besten prüfbar?",
+        "options": [
+          {
+            "id": "re-q4-0",
+            "text": "Die Anwendung soll gut sein"
+          },
+          {
+            "id": "re-q4-1",
+            "text": "Berichte sollen schnell kommen"
+          },
+          {
+            "id": "re-q4-2",
+            "text": "Das System stellt jeden Montag bis 8 Uhr die Umsätze der Vorwoche bereit"
+          }
+        ],
+        "correctAnswerId": "re-q4-2",
+        "explanation": "Der Zeitpunkt, die Empfänger im Kontext und der Berichtsinhalt können konkret überprüft werden. Vage Begriffe wie „gut“ reichen nicht aus."
+      },
+      {
+        "id": "re-q5",
+        "prompt": "Was gehört zu den Aufgaben eines Requirement Engineers?",
+        "options": [
+          {
+            "id": "re-q5-0",
+            "text": "Anforderungen ermitteln, dokumentieren, prüfen und Änderungen begleiten"
+          },
+          {
+            "id": "re-q5-1",
+            "text": "Alle technischen Entscheidungen allein treffen"
+          },
+          {
+            "id": "re-q5-2",
+            "text": "Nur am Ende des Projekts eine Dokumentation schreiben"
+          }
+        ],
+        "correctAnswerId": "re-q5-0",
+        "explanation": "RE begleitet Anforderungen über ihren Lebenszyklus und stimmt sie mit den Beteiligten ab."
+      }
+    ]
+  },
+  {
+    "id": "api-grundlagen",
+    "categoryId": "it-grundwissen",
+    "title": "Was ist eine API?",
+    "duration": 7,
+    "status": "available",
+    "introduction": "Ob Wetter-App, Online-Shop oder internes Portal: Systeme tauschen ständig Informationen aus. APIs machen diesen Austausch möglich.",
+    "sections": [
+      {
+        "id": "definition",
+        "heading": "Eine vereinbarte Schnittstelle",
+        "paragraphs": [
+          "API steht für Application Programming Interface – auf Deutsch: Programmierschnittstelle. Sie legt fest, wie Software eine Funktion oder Daten einer anderen Software nutzen kann.",
+          "Eine API ist wie ein vereinbarter Zugang: Sie beschreibt, welche Anfragen möglich sind, welche Angaben benötigt werden und wie Antworten aussehen. Die interne Umsetzung muss das anfragende System dafür nicht kennen."
+        ]
+      },
+      {
+        "id": "austausch",
+        "heading": "Warum Systeme über APIs sprechen",
+        "paragraphs": [
+          "Systeme haben unterschiedliche Aufgaben. Ein Online-Shop verwaltet Bestellungen, ein Zahlungsdienst verarbeitet Zahlungen. Über eine API kann der Shop eine Zahlung anfragen, ohne selbst einen Zahlungsdienst zu entwickeln.",
+          "Diese Aufteilung ermöglicht die Wiederverwendung von Funktionen und den geregelten Austausch von Daten. Welche Zugriffe erlaubt sind, muss dabei bewusst festgelegt und geschützt werden. Eine API ist nicht automatisch öffentlich zugänglich."
+        ]
+      },
+      {
+        "id": "request-response",
+        "heading": "Anfrage und Antwort",
+        "paragraphs": [
+          "Bei vielen Web-APIs sendet ein Client eine Anfrage (Request) an einen Server. Der Server verarbeitet die Anfrage und liefert eine Antwort (Response), häufig als strukturierte Daten im JSON-Format.",
+          "Die API-Dokumentation beschreibt zum Beispiel Adresse, benötigte Parameter, Datenformate und mögliche Fehler. Nicht jede Anfrage gelingt: Bei einem unbekannten Ort kann etwa eine Fehlermeldung zurückkommen. Nicht alle APIs sind Web-APIs; das Prinzip der vereinbarten Schnittstelle gilt auch innerhalb von Software."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Wie kommt das Wetter in die App?",
+      "text": "Du wählst in einer Wetter-App Berlin aus. Die App fragt über die API eines Wetterdienstes die Wetterdaten für Berlin an. Der Dienst antwortet beispielsweise mit { \"stadt\": \"Berlin\", \"temperatur\": 18 }. Die App zeigt daraus „Berlin: 18 °C“ an. Sie muss weder die Messstationen betreiben noch die interne Berechnung des Wetterdienstes kennen."
+    },
+    "takeaway": "Eine API ist eine vereinbarte Schnittstelle. Sie ermöglicht Software, Daten oder Funktionen anderer Software kontrolliert zu nutzen.",
+    "quiz": [
+      {
+        "id": "api-q1",
+        "prompt": "Wofür steht API?",
+        "options": [
+          {
+            "id": "api-q1-0",
+            "text": "Application Programming Interface"
+          },
+          {
+            "id": "api-q1-1",
+            "text": "Automatische Projekt-Integration"
+          },
+          {
+            "id": "api-q1-2",
+            "text": "Advanced Process Internet"
+          }
+        ],
+        "correctAnswerId": "api-q1-0",
+        "explanation": "Application Programming Interface bedeutet Programmierschnittstelle."
+      },
+      {
+        "id": "api-q2",
+        "prompt": "Warum nutzt ein Online-Shop die API eines Zahlungsdienstes?",
+        "options": [
+          {
+            "id": "api-q2-0",
+            "text": "Damit alle Daten für jeden öffentlich sind"
+          },
+          {
+            "id": "api-q2-1",
+            "text": "Um eine vorhandene Zahlungsfunktion zu nutzen"
+          },
+          {
+            "id": "api-q2-2",
+            "text": "Damit keine Fehler mehr auftreten können"
+          }
+        ],
+        "correctAnswerId": "api-q2-1",
+        "explanation": "Die API erlaubt es dem Shop, die spezialisierte Funktion eines anderen Systems zu verwenden."
+      },
+      {
+        "id": "api-q3",
+        "prompt": "Was passiert im Wetter-Beispiel?",
+        "options": [
+          {
+            "id": "api-q3-0",
+            "text": "Die App baut eine eigene Messstation"
+          },
+          {
+            "id": "api-q3-1",
+            "text": "Der Wetterdienst bedient den Bildschirm direkt"
+          },
+          {
+            "id": "api-q3-2",
+            "text": "Die App fragt Daten an und stellt die Antwort dar"
+          }
+        ],
+        "correctAnswerId": "api-q3-2",
+        "explanation": "Die App sendet eine Anfrage und verarbeitet die Antwort des Wetterdienstes für die Anzeige."
+      },
+      {
+        "id": "api-q4",
+        "prompt": "Was sollte eine API-Dokumentation beschreiben?",
+        "options": [
+          {
+            "id": "api-q4-0",
+            "text": "Mögliche Anfragen, benötigte Angaben und Antwortformate"
+          },
+          {
+            "id": "api-q4-1",
+            "text": "Nur das Logo des Anbieters"
+          },
+          {
+            "id": "api-q4-2",
+            "text": "Alle privaten Passwörter des Teams"
+          }
+        ],
+        "correctAnswerId": "api-q4-0",
+        "explanation": "Ein klarer Schnittstellenvertrag umfasst auch mögliche Fehler und gegebenenfalls die erforderliche Authentifizierung."
+      },
+      {
+        "id": "api-q5",
+        "prompt": "Welche Aussage über APIs ist richtig?",
+        "options": [
+          {
+            "id": "api-q5-0",
+            "text": "Jede API ist frei und öffentlich zugänglich"
+          },
+          {
+            "id": "api-q5-1",
+            "text": "Eine API legt fest, wie Software Funktionen oder Daten nutzen kann"
+          },
+          {
+            "id": "api-q5-2",
+            "text": "Eine API ersetzt immer eine Datenbank"
+          }
+        ],
+        "correctAnswerId": "api-q5-1",
+        "explanation": "Eine API definiert den Zugang zu Funktionen oder Daten. Zugriffe können beschränkt sein; Datenbanken haben eine andere Aufgabe."
+      }
+    ]
+  },
+  {
+    "id": "anforderungen-formulieren",
+    "categoryId": "requirements-engineering",
+    "title": "Gute Anforderungen formulieren",
+    "duration": 8,
+    "status": "planned",
+    "introduction": "Eindeutig, verständlich und prüfbar: Anforderungen auf den Punkt bringen."
+  },
+  {
+    "id": "datenbanken",
+    "categoryId": "it-grundwissen",
+    "title": "Wie funktioniert eine Datenbank?",
+    "duration": 6,
+    "status": "planned",
+    "introduction": "Daten speichern, strukturieren und wiederfinden."
+  },
+  {
+    "id": "software-lebenszyklus",
+    "categoryId": "it-projekte",
+    "title": "Von der Idee zum Release",
+    "duration": 8,
+    "status": "planned",
+    "introduction": "Die Phasen eines Softwareprojekts und ihr Zusammenspiel."
+  },
+  {
+    "id": "agile-zusammenarbeit",
+    "categoryId": "it-projekte",
+    "title": "Agile Zusammenarbeit verstehen",
+    "duration": 7,
+    "status": "planned",
+    "introduction": "Schrittweise entwickeln und gemeinsam aus Feedback lernen."
+  },
+  {
+    "id": "stakeholder-interviews",
+    "categoryId": "re-praxis",
+    "title": "Stakeholder-Interviews führen",
+    "duration": 8,
+    "status": "planned",
+    "introduction": "Mit den richtigen Fragen den tatsächlichen Bedarf entdecken."
+  },
+  {
+    "id": "user-stories",
+    "categoryId": "re-praxis",
+    "title": "User Stories in der Praxis",
+    "duration": 7,
+    "status": "planned",
+    "introduction": "Bedürfnisse aus Sicht der Nutzenden beschreiben."
+  }
+]
