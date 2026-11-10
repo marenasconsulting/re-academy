@@ -1,0 +1,6 @@
+[
+  { "id": "requirements-engineering", "title": "Requirements Engineering", "description": "Die richtigen Fragen stellen. Anforderungen verstehen und klar formulieren.", "icon": "requirements", "label": "Das Fundament", "color": "green" },
+  { "id": "it-grundwissen", "title": "Technisches IT-Grundwissen", "description": "Technologie verstehen und mit Entwicklungsteams auf Augenhöhe sprechen.", "icon": "technology", "label": "Technik verstehen", "color": "blue" },
+  { "id": "it-projekte", "title": "IT-Projekte & Softwareentwicklung", "description": "Von der ersten Idee bis zum Release: So entstehen digitale Lösungen.", "icon": "projects", "label": "Zusammen arbeiten", "color": "purple" },
+  { "id": "re-praxis", "title": "RE-Praxiswissen", "description": "Methoden und Werkzeuge für deinen Alltag als Requirement Engineer.", "icon": "practice", "label": "In die Praxis", "color": "orange" }
+]
