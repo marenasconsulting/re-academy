@@ -138,6 +138,13 @@
         "correctAnswerId": "re-q5-0",
         "explanation": "RE begleitet Anforderungen über ihren Lebenszyklus und stimmt sie mit den Beteiligten ab."
       }
+    ],
+    "format": "lesson",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Was ist Requirements Engineering & Management?; Nutzen von RE&M"
+      }
     ]
   },
   {
@@ -153,7 +160,8 @@
         "heading": "Eine vereinbarte Schnittstelle",
         "paragraphs": [
           "API steht für Application Programming Interface – auf Deutsch: Programmierschnittstelle. Sie legt fest, wie Software eine Funktion oder Daten einer anderen Software nutzen kann.",
-          "Eine API ist wie ein vereinbarter Zugang: Sie beschreibt, welche Anfragen möglich sind, welche Angaben benötigt werden und wie Antworten aussehen. Die interne Umsetzung muss das anfragende System dafür nicht kennen."
+          "Eine API ist wie ein vereinbarter Zugang: Sie beschreibt, welche Anfragen möglich sind, welche Angaben benötigt werden und wie Antworten aussehen. Die interne Umsetzung muss das anfragende System dafür nicht kennen.",
+          "Eine passende Analogie ist die Speisekarte im Restaurant: Du erfährst, was du bestellen kannst und welche Angaben nötig sind. Wie die Küche intern arbeitet, musst du dafür nicht wissen."
         ]
       },
       {
@@ -279,15 +287,122 @@
         "correctAnswerId": "api-q5-1",
         "explanation": "Eine API definiert den Zugang zu Funktionen oder Daten. Zugriffe können beschränkt sein; Datenbanken haben eine andere Aufgabe."
       }
+    ],
+    "format": "lesson",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folie 2"
+      }
     ]
   },
   {
     "id": "anforderungen-formulieren",
     "categoryId": "requirements-engineering",
     "title": "Gute Anforderungen formulieren",
-    "duration": 8,
-    "status": "planned",
-    "introduction": "Eindeutig, verständlich und prüfbar: Anforderungen auf den Punkt bringen."
+    "duration": 7,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Eine gute Anforderung schafft Klarheit für Fachbereich, Entwicklung und Test. Entscheidend ist, dass alle dasselbe verstehen und das Ergebnis prüfen können.",
+    "sections": [
+      {
+        "id": "anforderungen-formulieren-s1",
+        "heading": "Verständlich und eindeutig",
+        "paragraphs": [
+          "Verwende einheitliche Begriffe und beschreibe pro Anforderung möglichst einen zusammenhängenden Sachverhalt. Halte fest, für welche Rolle und in welchem Kontext sie gilt.",
+          "Wörter wie „schnell“, „einfach“ oder „benutzerfreundlich“ lassen Spielraum. Kläre gemeinsam, woran die gewünschte Eigenschaft konkret erkennbar ist."
+        ]
+      },
+      {
+        "id": "anforderungen-formulieren-s2",
+        "heading": "Prüfbar statt vage",
+        "paragraphs": [
+          "„Der Bericht soll schnell laden“ reicht als Prüfgrundlage nicht aus. Eine konkrete Zeitgrenze zusammen mit Datenmenge und Testbedingungen schafft Klarheit. Die Werte werden fachlich vereinbart, nicht vom RE erfunden.",
+          "Erfasse auch Vorbedingungen, Ausnahmen und Fehlerfälle. Beispielsweise: Was passiert, wenn keine Daten vorliegen oder die nötige Berechtigung fehlt?"
+        ]
+      },
+      {
+        "id": "anforderungen-formulieren-s3",
+        "heading": "Gemeinsam prüfen und pflegen",
+        "paragraphs": [
+          "Lass Anforderungen mit Fachbereich, Entwicklung und Test gegenlesen: Sind sie relevant, realistisch, widerspruchsfrei und ausreichend vollständig?",
+          "Dokumentiere Entscheidungen und offene Punkte. Bei Änderungen prüfst du Auswirkungen auf verknüpfte Anforderungen und Tests. Eine gute Formulierung ersetzt die Abstimmung nicht."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Vom Wunsch zur prüfbaren Aussage",
+      "text": "Aus „Die Vertragsübersicht muss schnell sein“ wird nach Abstimmung beispielsweise: „Bei bis zu 100 Verträgen zeigt das Portal die erste Ergebnisseite innerhalb von zwei Sekunden nach Aufruf an.“ Netzwerk- und Testbedingungen werden dazu dokumentiert. Die Zahlen sind hier ein Lernbeispiel."
+    },
+    "takeaway": "Gute Anforderungen sind gemeinsam verständlich, eindeutig und unter vereinbarten Bedingungen prüfbar.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Dokumentation; Anforderungsspezifikation & -validierung"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "anforderungen-formulieren-q1",
+        "prompt": "Welche Formulierung ist am besten prüfbar?",
+        "options": [
+          {
+            "id": "anforderungen-formulieren-q1-2",
+            "text": "Das System ist modern."
+          },
+          {
+            "id": "anforderungen-formulieren-q1-0",
+            "text": "Die erste Ergebnisseite erscheint unter vereinbarten Testbedingungen innerhalb von zwei Sekunden."
+          },
+          {
+            "id": "anforderungen-formulieren-q1-1",
+            "text": "Die Seite ist sehr schnell."
+          }
+        ],
+        "correctAnswerId": "anforderungen-formulieren-q1-0",
+        "explanation": "Eine messbare Aussage mit festgelegten Bedingungen erlaubt eine objektive Prüfung."
+      },
+      {
+        "id": "anforderungen-formulieren-q2",
+        "prompt": "Was solltest du mit einem unklaren Fachbegriff tun?",
+        "options": [
+          {
+            "id": "anforderungen-formulieren-q2-0",
+            "text": "Die Bedeutung mit den Beteiligten klären und einheitlich dokumentieren."
+          },
+          {
+            "id": "anforderungen-formulieren-q2-1",
+            "text": "Den Begriff ungeprüft weiterverwenden."
+          },
+          {
+            "id": "anforderungen-formulieren-q2-2",
+            "text": "Für jedes Dokument eine neue Bedeutung wählen."
+          }
+        ],
+        "correctAnswerId": "anforderungen-formulieren-q2-0",
+        "explanation": "Ein gemeinsames Begriffsverständnis verhindert unterschiedliche Interpretationen."
+      },
+      {
+        "id": "anforderungen-formulieren-q3",
+        "prompt": "Wer sollte Anforderungen prüfen?",
+        "options": [
+          {
+            "id": "anforderungen-formulieren-q3-1",
+            "text": "Nur der Verfasser, ohne Rückfragen."
+          },
+          {
+            "id": "anforderungen-formulieren-q3-2",
+            "text": "Erst die Nutzenden nach dem Produktivstart."
+          },
+          {
+            "id": "anforderungen-formulieren-q3-0",
+            "text": "Fachbereich, Entwicklung und Test gemeinsam mit dem RE."
+          }
+        ],
+        "correctAnswerId": "anforderungen-formulieren-q3-0",
+        "explanation": "Verschiedene Perspektiven helfen, fachliche Lücken, Umsetzungsrisiken und fehlende Testbarkeit früh zu erkennen."
+      }
+    ]
   },
   {
     "id": "datenbanken",
@@ -308,25 +423,1412 @@
   {
     "id": "agile-zusammenarbeit",
     "categoryId": "it-projekte",
-    "title": "Agile Zusammenarbeit verstehen",
-    "duration": 7,
-    "status": "planned",
-    "introduction": "Schrittweise entwickeln und gemeinsam aus Feedback lernen."
+    "title": "Backlogs und Scrum-Termine verstehen",
+    "duration": 8,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Refinement, Planning, Review und Retrospektive erfüllen unterschiedliche Aufgaben. Wer den Zweck kennt, kann Anforderungen gezielt vorbereiten.",
+    "sections": [
+      {
+        "id": "agile-zusammenarbeit-s1",
+        "heading": "Product Backlog und Sprint Backlog",
+        "paragraphs": [
+          "Das Product Backlog ist eine geordnete, sich weiterentwickelnde Liste der Arbeit am Produkt. Der Product Owner verantwortet sein wirksames Management und seine Reihenfolge.",
+          "Das Sprint Backlog umfasst das Sprintziel, die ausgewählten Product-Backlog-Einträge und den Plan zur Umsetzung. Es wird von den Developers während des Sprints aktualisiert, wenn sie mehr lernen. Umfang kann mit dem Product Owner neu verhandelt werden, ohne das Sprintziel zu gefährden."
+        ]
+      },
+      {
+        "id": "agile-zusammenarbeit-s2",
+        "heading": "Refinement und Sprint Planning",
+        "paragraphs": [
+          "Refinement ist eine laufende Tätigkeit zum Klären, Zerlegen und Schätzen von Backlog-Einträgen. Teams können dafür regelmäßige Termine nutzen. Es ist in Scrum kein zusätzliches formales Event.",
+          "Im Sprint Planning wird gemeinsam geklärt, warum der Sprint wertvoll ist, was umgesetzt werden kann und wie die Arbeit angegangen wird. Ein technisches Refinement kann vorher Schnittstellen und Architekturfragen vertiefen."
+        ]
+      },
+      {
+        "id": "agile-zusammenarbeit-s3",
+        "heading": "Daily, Review und Retrospektive",
+        "paragraphs": [
+          "Im Daily Scrum prüfen die Developers ihren Fortschritt zum Sprintziel und passen den Plan für den nächsten Arbeitstag an. Es ist kein Statusbericht an die Projektleitung.",
+          "Im Sprint Review werden Ergebnis und veränderte Rahmenbedingungen mit Stakeholdern betrachtet und nächste Schritte diskutiert. Es ist nicht automatisch eine formale Abnahme. In der Retrospektive entwickelt das Scrum Team Verbesserungen für Qualität und Zusammenarbeit."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein neuer Fehler im Sprint",
+      "text": "Während der Umsetzung wird eine bislang unbekannte Abhängigkeit entdeckt. Die Developers passen ihren Plan an und klären mit dem Product Owner den Umfang, während das Sprintziel geschützt bleibt. Im Review wird das Produktergebnis besprochen; in der Retrospektive überlegt das Team, wie es solche Abhängigkeiten früher erkennt."
+    },
+    "takeaway": "Backlogs entwickeln sich mit neuen Erkenntnissen. Nutze jeden Termin für seinen Zweck: planen, abstimmen, Produktfeedback erhalten oder Zusammenarbeit verbessern.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Product Backlog; Sprint Backlog; Scrum-Termine – fachlich präzisiert"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "agile-zusammenarbeit-q1",
+        "prompt": "Wozu dient ein Refinement?",
+        "options": [
+          {
+            "id": "agile-zusammenarbeit-q1-0",
+            "text": "Backlog-Einträge klären, zerlegen und schätzen."
+          },
+          {
+            "id": "agile-zusammenarbeit-q1-1",
+            "text": "Die Zusammenarbeit rückblickend bewerten."
+          },
+          {
+            "id": "agile-zusammenarbeit-q1-2",
+            "text": "Eine unveränderliche Jahresplanung festlegen."
+          }
+        ],
+        "correctAnswerId": "agile-zusammenarbeit-q1-0",
+        "explanation": "Refinement macht bevorstehende Arbeit verständlicher und überschaubarer."
+      },
+      {
+        "id": "agile-zusammenarbeit-q2",
+        "prompt": "Darf das Sprint Backlog während des Sprints angepasst werden?",
+        "options": [
+          {
+            "id": "agile-zusammenarbeit-q2-1",
+            "text": "Nein, es bleibt immer vollständig unverändert."
+          },
+          {
+            "id": "agile-zusammenarbeit-q2-2",
+            "text": "Ja, aber ausschließlich die Geschäftsführung darf es ändern."
+          },
+          {
+            "id": "agile-zusammenarbeit-q2-0",
+            "text": "Ja, die Developers aktualisieren den Plan; das Sprintziel darf nicht gefährdet werden."
+          }
+        ],
+        "correctAnswerId": "agile-zusammenarbeit-q2-0",
+        "explanation": "Das Sprint Backlog ist ein aktueller Plan und wird an neue Erkenntnisse angepasst."
+      },
+      {
+        "id": "agile-zusammenarbeit-q3",
+        "prompt": "Welcher Termin dient besonders der Verbesserung der Zusammenarbeit?",
+        "options": [
+          {
+            "id": "agile-zusammenarbeit-q3-2",
+            "text": "Die Marktkommunikation."
+          },
+          {
+            "id": "agile-zusammenarbeit-q3-0",
+            "text": "Die Retrospektive."
+          },
+          {
+            "id": "agile-zusammenarbeit-q3-1",
+            "text": "Eine reine API-Demonstration."
+          }
+        ],
+        "correctAnswerId": "agile-zusammenarbeit-q3-0",
+        "explanation": "In der Retrospektive plant das Scrum Team konkrete Verbesserungen für Qualität und Wirksamkeit."
+      }
+    ]
   },
   {
     "id": "stakeholder-interviews",
     "categoryId": "re-praxis",
-    "title": "Stakeholder-Interviews führen",
-    "duration": 8,
-    "status": "planned",
-    "introduction": "Mit den richtigen Fragen den tatsächlichen Bedarf entdecken."
+    "title": "Bedarf mit Stakeholdern klären",
+    "duration": 7,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Wünsche sind ein guter Gesprächseinstieg. Für tragfähige Anforderungen brauchst du zusätzlich Kontext, Beispiele und ein gemeinsames Verständnis des Problems.",
+    "sections": [
+      {
+        "id": "stakeholder-interviews-s1",
+        "heading": "Die passenden Perspektiven einbeziehen",
+        "paragraphs": [
+          "Identifiziere, wer das System nutzt, fachlich entscheidet oder von Änderungen betroffen ist. Neben dem Fachbereich können etwa Betrieb, Entwicklung, Support und rechtliche Fachleute relevant sein.",
+          "Kläre vor dem Gespräch das Ziel und den betrachteten Prozess. Bereite offene Fragen vor, ohne die Lösung bereits vorzugeben."
+        ]
+      },
+      {
+        "id": "stakeholder-interviews-s2",
+        "heading": "Konkrete Situationen verstehen",
+        "paragraphs": [
+          "Frage nach dem heutigen Ablauf, wiederkehrenden Problemen und ihren Folgen. Lass dir einen konkreten Fall zeigen: Was wurde getan, wo gab es Schwierigkeiten und was war das Ergebnis?",
+          "Unterscheide beobachtete Fakten, Annahmen und vorgeschlagene Lösungen. Frage auch nach Ausnahmen und unterschiedlichen Nutzergruppen. Widersprüchliche Aussagen werden gemeinsam geklärt."
+        ]
+      },
+      {
+        "id": "stakeholder-interviews-s3",
+        "heading": "Ergebnisse rückbestätigen",
+        "paragraphs": [
+          "Fasse Bedarf, Begriffe, offene Fragen und Entscheidungen verständlich zusammen. Bitte die Beteiligten zu prüfen, ob du ihre Aussagen richtig verstanden hast.",
+          "Leite daraus Anforderungen ab und halte ihren Ursprung nachvollziehbar fest. Ungeklärte Punkte werden sichtbar weiterverfolgt, statt sie stillschweigend als entschieden zu behandeln."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Retouren verstehen",
+      "text": "Ein Onlinehändler wünscht eine neue Retourenfunktion. Im Gespräch mit dem Support zeigt sich: Kundinnen rufen oft an, weil das Rücksendeetikett fehlt. RE klärt, wann das passiert, welche Daten nötig sind und welche Fälle ausgenommen sind. Erst dann wird festgelegt, wie die digitale Unterstützung aussehen soll."
+    },
+    "takeaway": "Kläre konkrete Situationen und Folgen, beziehe verschiedene Perspektiven ein und bestätige dein Verständnis gemeinsam.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Anforderungserhebung; Kommunikation & Abstimmung"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "stakeholder-interviews-q1",
+        "prompt": "Welche Frage hilft am besten, den Bedarf zu verstehen?",
+        "options": [
+          {
+            "id": "stakeholder-interviews-q1-1",
+            "text": "Soll der bereits beschlossene Button blau sein?"
+          },
+          {
+            "id": "stakeholder-interviews-q1-2",
+            "text": "Können wir die Rückfragen überspringen?"
+          },
+          {
+            "id": "stakeholder-interviews-q1-0",
+            "text": "Kannst du mir einen konkreten Fall und die heutige Schwierigkeit zeigen?"
+          }
+        ],
+        "correctAnswerId": "stakeholder-interviews-q1-0",
+        "explanation": "Konkrete Fälle machen Abläufe und tatsächliche Probleme nachvollziehbar."
+      },
+      {
+        "id": "stakeholder-interviews-q2",
+        "prompt": "Was machst du mit widersprüchlichen Stakeholder-Aussagen?",
+        "options": [
+          {
+            "id": "stakeholder-interviews-q2-2",
+            "text": "Beide ungeprüft als identische Anforderung behandeln."
+          },
+          {
+            "id": "stakeholder-interviews-q2-0",
+            "text": "Die Unterschiede sichtbar machen und gemeinsam klären."
+          },
+          {
+            "id": "stakeholder-interviews-q2-1",
+            "text": "Eine Aussage ohne Begründung löschen."
+          }
+        ],
+        "correctAnswerId": "stakeholder-interviews-q2-0",
+        "explanation": "Widersprüche sind ein Klärungsbedarf und sollten nicht verdeckt werden."
+      },
+      {
+        "id": "stakeholder-interviews-q3",
+        "prompt": "Warum lässt du die Gesprächsergebnisse rückbestätigen?",
+        "options": [
+          {
+            "id": "stakeholder-interviews-q3-0",
+            "text": "Um Fehlinterpretationen früh zu erkennen."
+          },
+          {
+            "id": "stakeholder-interviews-q3-1",
+            "text": "Um jede weitere Abstimmung für immer auszuschließen."
+          },
+          {
+            "id": "stakeholder-interviews-q3-2",
+            "text": "Um eine technische Umsetzung automatisch zu erzeugen."
+          }
+        ],
+        "correctAnswerId": "stakeholder-interviews-q3-0",
+        "explanation": "Rückbestätigung sichert das gemeinsame Verständnis, ersetzt aber keine spätere Pflege."
+      }
+    ]
   },
   {
     "id": "user-stories",
     "categoryId": "re-praxis",
-    "title": "User Stories in der Praxis",
+    "title": "User Stories und Akzeptanzkriterien",
+    "duration": 8,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Eine User Story verbindet Rolle, Ziel und Nutzen. Akzeptanzkriterien konkretisieren, welches Verhalten die Beteiligten erwarten und prüfen wollen.",
+    "sections": [
+      {
+        "id": "user-stories-s1",
+        "heading": "Rolle, Ziel und Nutzen formulieren",
+        "paragraphs": [
+          "Ein gebräuchliches Muster lautet: „Als [Rolle] möchte ich [Ziel], um [Nutzen].“ Es lenkt den Blick auf den Bedarf statt nur auf technische Aufgaben.",
+          "Die Story ist ein Anlass zur gemeinsamen Klärung. Kontext, Abhängigkeiten, fachliche Regeln und passende Hinweise ergänzen den kurzen Satz."
+        ]
+      },
+      {
+        "id": "user-stories-s2",
+        "heading": "Erwartetes Verhalten konkretisieren",
+        "paragraphs": [
+          "Akzeptanzkriterien beschreiben Bedingungen, unter denen die Story fachlich akzeptiert werden kann. Kläre Normalfälle, Berechtigungen und relevante Fehlerfälle.",
+          "Für einen Vertragsdownload kann gelten: Eine angemeldete Person sieht nur eigene Verträge; zu jedem verfügbaren Dokument kann eine PDF-Datei geladen werden; fehlt ein Dokument, erscheint eine verständliche Meldung. Die konkreten Regeln sind gemeinsam festzulegen."
+        ]
+      },
+      {
+        "id": "user-stories-s3",
+        "heading": "Gemeinsam verfeinern und prüfen",
+        "paragraphs": [
+          "Der Product Owner verantwortet das Product Backlog. RE unterstützt die Analyse und Beschreibung; Entwicklung, UI/UX und Test bringen ihre Perspektiven ein.",
+          "Prüfe, ob die Story überschaubar ist, Nutzen liefert und mit den vereinbarten Kriterien geprüft werden kann. Akzeptanzkriterien einer Story ersetzen nicht die übergreifende Definition of Done."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine Rechnung herunterladen",
+      "text": "„Als Kundin möchte ich meine Rechnung herunterladen, um sie digital ablegen zu können.“ Dazu werden Berechtigung, PDF-Format, vorhandene Rechnungen und Fehlermeldungen vereinbart. Ein Test prüft zusätzlich, dass eine andere Kundin diese Rechnung nicht abrufen kann."
+    },
+    "takeaway": "Die Story erklärt das Bedürfnis. Akzeptanzkriterien machen das erwartete Verhalten konkret und prüfbar.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Was ist eine User Story?; Bestandteile; Akzeptanzkriterien; Beteiligte Rollen"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "user-stories-q1",
+        "prompt": "Was gehört zum gebräuchlichen Story-Muster?",
+        "options": [
+          {
+            "id": "user-stories-q1-0",
+            "text": "Rolle, Ziel und Nutzen."
+          },
+          {
+            "id": "user-stories-q1-1",
+            "text": "Nur eine technische Ticketnummer."
+          },
+          {
+            "id": "user-stories-q1-2",
+            "text": "Ausschließlich ein Lieferdatum."
+          }
+        ],
+        "correctAnswerId": "user-stories-q1-0",
+        "explanation": "Die Nutzerperspektive und der erwartete Nutzen schaffen fachlichen Kontext."
+      },
+      {
+        "id": "user-stories-q2",
+        "prompt": "Welches Akzeptanzkriterium ist konkret prüfbar?",
+        "options": [
+          {
+            "id": "user-stories-q2-1",
+            "text": "Das Portal ist toll."
+          },
+          {
+            "id": "user-stories-q2-2",
+            "text": "Die Funktion ist irgendwie fertig."
+          },
+          {
+            "id": "user-stories-q2-0",
+            "text": "Eine angemeldete Person kann nur ihre eigenen Rechnungen herunterladen."
+          }
+        ],
+        "correctAnswerId": "user-stories-q2-0",
+        "explanation": "Die Berechtigungsregel lässt sich mit eigenen und fremden Rechnungen überprüfen."
+      },
+      {
+        "id": "user-stories-q3",
+        "prompt": "Ersetzen die Akzeptanzkriterien einer Story die Definition of Done?",
+        "options": [
+          {
+            "id": "user-stories-q3-2",
+            "text": "Ja, wenn die Story kurz genug ist."
+          },
+          {
+            "id": "user-stories-q3-0",
+            "text": "Nein, beide beschreiben unterschiedliche, ergänzende Qualitätsaspekte."
+          },
+          {
+            "id": "user-stories-q3-1",
+            "text": "Ja, übergreifende Qualitätsmaßstäbe sind dann überflüssig."
+          }
+        ],
+        "correctAnswerId": "user-stories-q3-0",
+        "explanation": "Story-Kriterien konkretisieren das fachliche Verhalten; die Definition of Done gilt für die Qualität des Inkrements."
+      }
+    ]
+  },
+  {
+    "id": "anforderungsarten",
+    "categoryId": "requirements-engineering",
+    "title": "Funktionen, Qualität und Rahmenbedingungen",
+    "duration": 6,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Nicht jede Anforderung beschreibt eine neue Funktion. Auch Qualität und verbindliche Grenzen entscheiden darüber, ob eine Lösung ihren Zweck erfüllt.",
+    "sections": [
+      {
+        "id": "anforderungsarten-s1",
+        "heading": "Funktionale Anforderungen",
+        "paragraphs": [
+          "Funktionale Anforderungen beschreiben, was ein System tun soll: Daten anzeigen, einen Vertrag herunterladen oder eine Benachrichtigung versenden. Sie beziehen sich auf beobachtbares Verhalten."
+        ]
+      },
+      {
+        "id": "anforderungsarten-s2",
+        "heading": "Qualitätsanforderungen",
+        "paragraphs": [
+          "Qualitätsanforderungen beschreiben, wie gut eine Funktion oder das System eine Aufgabe erfüllt. Dazu gehören etwa Antwortzeit, Verfügbarkeit, Sicherheit und Bedienbarkeit.",
+          "Auch diese Anforderungen brauchen überprüfbare Kriterien. „Die Anwendung ist sicher“ ist ohne konkreten Kontext und abgestimmte Maßnahmen nicht ausreichend."
+        ]
+      },
+      {
+        "id": "anforderungsarten-s3",
+        "heading": "Rahmenbedingungen und Schnittstellen",
+        "paragraphs": [
+          "Rahmenbedingungen begrenzen den Lösungsraum, etwa durch gesetzliche Vorgaben, bestehende Plattformen oder festgelegte Standards. Die verbindliche Grundlage und ihre Auswirkungen sollten nachvollziehbar sein.",
+          "Schnittstellenanforderungen klären das Zusammenspiel mit anderen Systemen: Welche Daten werden ausgetauscht, in welchem Format und wie werden Fehler behandelt? Sie können funktionale und qualitative Aspekte enthalten."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Download mit mehreren Perspektiven",
+      "text": "Funktion: Eine berechtigte Person lädt ihren Vertrag als PDF herunter. Qualität: Der Download beginnt unter vereinbarten Lastbedingungen innerhalb von drei Sekunden. Rahmenbedingung: Die vereinbarten Datenschutz- und Aufbewahrungsvorgaben müssen berücksichtigt werden. Die konkreten Kriterien sind mit den zuständigen Fachleuten zu klären."
+    },
+    "takeaway": "Beschreibe sowohl das gewünschte Verhalten als auch Qualitätsziele und verbindliche Grenzen.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "RE&M-Grundlagen; Glossar: funktionale, nicht-funktionale und Interface-Anforderungen"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "anforderungsarten-q1",
+        "prompt": "Was ist eine funktionale Anforderung?",
+        "options": [
+          {
+            "id": "anforderungsarten-q1-2",
+            "text": "Die bestehende Plattform ist verbindlich zu nutzen."
+          },
+          {
+            "id": "anforderungsarten-q1-0",
+            "text": "Das Portal ermöglicht den Download eines Vertrags als PDF."
+          },
+          {
+            "id": "anforderungsarten-q1-1",
+            "text": "Die Antwortzeit beträgt höchstens zwei Sekunden."
+          }
+        ],
+        "correctAnswerId": "anforderungsarten-q1-0",
+        "explanation": "Der Download beschreibt eine konkrete Fähigkeit des Systems."
+      },
+      {
+        "id": "anforderungsarten-q2",
+        "prompt": "Welches Thema gehört zu Qualitätsanforderungen?",
+        "options": [
+          {
+            "id": "anforderungsarten-q2-0",
+            "text": "Die Antwortzeit bei vereinbarter Last."
+          },
+          {
+            "id": "anforderungsarten-q2-1",
+            "text": "Die Farbe des Teamkalenders."
+          },
+          {
+            "id": "anforderungsarten-q2-2",
+            "text": "Der Name des Projektraums."
+          }
+        ],
+        "correctAnswerId": "anforderungsarten-q2-0",
+        "explanation": "Antwortzeit ist eine Systemeigenschaft und sollte messbar beschrieben werden."
+      },
+      {
+        "id": "anforderungsarten-q3",
+        "prompt": "Was muss bei einer Schnittstelle geklärt werden?",
+        "options": [
+          {
+            "id": "anforderungsarten-q3-1",
+            "text": "Nur der Name des anderen Teams."
+          },
+          {
+            "id": "anforderungsarten-q3-2",
+            "text": "Ausschließlich die Bildschirmgröße."
+          },
+          {
+            "id": "anforderungsarten-q3-0",
+            "text": "Daten, Formate und Verhalten bei Fehlern."
+          }
+        ],
+        "correctAnswerId": "anforderungsarten-q3-0",
+        "explanation": "Schnittstellenanforderungen betreffen den Austausch und das abgestimmte Verhalten zwischen Systemen."
+      }
+    ]
+  },
+  {
+    "id": "anforderungen-verwalten",
+    "categoryId": "requirements-engineering",
+    "title": "Anforderungen ändern und nachverfolgen",
     "duration": 7,
-    "status": "planned",
-    "introduction": "Bedürfnisse aus Sicht der Nutzenden beschreiben."
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Anforderungen entwickeln sich weiter. Nachvollziehbarkeit hilft dir, Änderungen gezielt zu bewerten und ihre Folgen im Blick zu behalten.",
+    "sections": [
+      {
+        "id": "anforderungen-verwalten-s1",
+        "heading": "Eine gemeinsame Referenz",
+        "paragraphs": [
+          "Anforderungen sollten an einem vereinbarten Ort mit stabiler Kennung, Status und Verantwortlichkeit gepflegt werden. So verweist ein Gespräch oder Test eindeutig auf dieselbe Anforderung.",
+          "Dokumentiere Versionen und Entscheidungen: Was wurde geändert, warum und mit wem wurde es abgestimmt?"
+        ]
+      },
+      {
+        "id": "anforderungen-verwalten-s2",
+        "heading": "Verbindungen sichtbar machen",
+        "paragraphs": [
+          "Traceability bedeutet Rückverfolgbarkeit. Eine Anforderung lässt sich etwa mit ihrem fachlichen Ursprung, einer Story, der Umsetzung und passenden Tests verknüpfen.",
+          "Solche Beziehungen zeigen, welche Tests eine Anforderung abdecken und welche Teile von einer Änderung betroffen sein könnten. Eine Verknüpfung allein beweist noch keine korrekte Umsetzung."
+        ]
+      },
+      {
+        "id": "anforderungen-verwalten-s3",
+        "heading": "Änderungen bewusst entscheiden",
+        "paragraphs": [
+          "Prüfe bei einer Änderung Nutzen, Aufwand, Abhängigkeiten, Risiken und betroffene Tests. Stimme die Entscheidung mit den zuständigen Rollen ab und passe Priorität und Dokumentation an.",
+          "Auch abgelehnte oder verschobene Änderungen sollten mit Begründung nachvollziehbar bleiben. So gehen Entscheidungen nicht im Chatverlauf verloren."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Link soll kürzer gültig sein",
+      "text": "Eine Passwort-Rücksetzfunktion soll statt 30 nur noch 15 Minuten gültige Links erzeugen. Über die Anforderungs-ID findest du die betroffene Story, die Dokumentation und Tests für gültige und abgelaufene Links. Nach Abstimmung werden alle betroffenen Stellen aktualisiert. Die Zeitwerte sind ein Beispiel, keine allgemeine Sicherheitsvorgabe."
+    },
+    "takeaway": "Pflege Ursprung, Entscheidungen und Beziehungen zu Umsetzung und Tests, damit Änderungen beherrschbar bleiben.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Management; Qualitätssicherung & Nachverfolgbarkeit"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "anforderungen-verwalten-q1",
+        "prompt": "Was bedeutet Traceability?",
+        "options": [
+          {
+            "id": "anforderungen-verwalten-q1-1",
+            "text": "Das automatische Programmieren jeder Anforderung."
+          },
+          {
+            "id": "anforderungen-verwalten-q1-2",
+            "text": "Das Löschen älterer Entscheidungen."
+          },
+          {
+            "id": "anforderungen-verwalten-q1-0",
+            "text": "Die Rückverfolgbarkeit von Anforderungen zu Ursprung, Umsetzung und Tests."
+          }
+        ],
+        "correctAnswerId": "anforderungen-verwalten-q1-0",
+        "explanation": "Traceability macht Beziehungen über den Lebenszyklus einer Anforderung sichtbar."
+      },
+      {
+        "id": "anforderungen-verwalten-q2",
+        "prompt": "Was solltest du vor einer Änderung untersuchen?",
+        "options": [
+          {
+            "id": "anforderungen-verwalten-q2-2",
+            "text": "Nichts, Änderungen betreffen immer nur einen Satz."
+          },
+          {
+            "id": "anforderungen-verwalten-q2-0",
+            "text": "Auswirkungen auf Nutzen, Aufwand, Abhängigkeiten und Tests."
+          },
+          {
+            "id": "anforderungen-verwalten-q2-1",
+            "text": "Nur die Schriftgröße des Tickets."
+          }
+        ],
+        "correctAnswerId": "anforderungen-verwalten-q2-0",
+        "explanation": "Auch kleine fachliche Änderungen können mehrere Komponenten und Prüffälle betreffen."
+      },
+      {
+        "id": "anforderungen-verwalten-q3",
+        "prompt": "Warum sind stabile Anforderungs-IDs hilfreich?",
+        "options": [
+          {
+            "id": "anforderungen-verwalten-q3-0",
+            "text": "Damit alle eindeutig auf dieselbe Anforderung verweisen können."
+          },
+          {
+            "id": "anforderungen-verwalten-q3-1",
+            "text": "Damit keine fachliche Abstimmung mehr nötig ist."
+          },
+          {
+            "id": "anforderungen-verwalten-q3-2",
+            "text": "Damit Anforderungen nie geändert werden dürfen."
+          }
+        ],
+        "correctAnswerId": "anforderungen-verwalten-q3-0",
+        "explanation": "Eine stabile Kennung bleibt als Referenz erhalten, auch wenn sich der Wortlaut ändert."
+      }
+    ]
+  },
+  {
+    "id": "re-prozess-einfuehren",
+    "categoryId": "requirements-engineering",
+    "title": "Einen RE-Prozess im Projekt etablieren",
+    "duration": 7,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Ein funktionierender RE-Prozess braucht gemeinsame Ziele, klare Rollen und gelebte Abstimmung. Ein neues Tool allein reicht dafür nicht aus.",
+    "sections": [
+      {
+        "id": "re-prozess-einfuehren-s1",
+        "heading": "Ausgangslage und Ziel klären",
+        "paragraphs": [
+          "Ermittle, wie Anforderungen heute entstehen und wo es Probleme gibt. Häufig sind Entscheidungen verstreut, Zuständigkeiten unklar oder Anforderungen nicht testbar.",
+          "Vereinbare mit den Beteiligten ein konkretes Verbesserungsziel und einen überschaubaren Pilotbereich. Beziehe sowohl Führung als auch die operativ arbeitenden Teams ein."
+        ]
+      },
+      {
+        "id": "re-prozess-einfuehren-s2",
+        "heading": "Verantwortlichkeiten und Abläufe vereinbaren",
+        "paragraphs": [
+          "Kläre, wer Anforderungen erfasst, fachlich entscheidet, priorisiert, prüft und freigibt. Lege passende Vorlagen, gemeinsame Ablageorte und Zugriffsrechte fest.",
+          "Vereinbare regelmäßige Abstimmungen sowie Qualitätsmaßstäbe für vorbereitete und fertige Arbeit. Eine Definition of Ready kann als Teamvereinbarung helfen; die Definition of Done beschreibt die vereinbarte Qualität des Inkrements."
+        ]
+      },
+      {
+        "id": "re-prozess-einfuehren-s3",
+        "heading": "Pilotieren und verbessern",
+        "paragraphs": [
+          "Erprobe den Ablauf an echten Anforderungen. Prüfe, ob Entscheidungen und Änderungen nachvollziehbar sind und das Team mit den Ergebnissen arbeiten kann.",
+          "Sammle Rückmeldungen und passe den Prozess an. Ein schlanker, genutzter Ablauf ist wertvoller als umfangreiche Vorgaben, die niemand anwendet."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Vom Zuruf zum abgestimmten Backlog",
+      "text": "Ein Team erhält Änderungswünsche über mehrere Chats. Es vereinbart einen gemeinsamen Eingang, eine verantwortliche Person für die fachliche Klärung und einen regelmäßigen Abstimmungstermin. Für einen Pilotbereich werden Ursprung, Akzeptanzkriterien und Entscheidungen einheitlich festgehalten. Danach bewertet das Team, ob weniger Rückfragen entstehen."
+    },
+    "takeaway": "Beginne mit Bedarf und Rollen, erprobe einen gemeinsamen Ablauf und verbessere ihn anhand echter Rückmeldungen.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Prozesse beim Kunden einführen"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "re-prozess-einfuehren-q1",
+        "prompt": "Was ist ein sinnvoller Start für einen neuen RE-Prozess?",
+        "options": [
+          {
+            "id": "re-prozess-einfuehren-q1-0",
+            "text": "Ausgangslage, Probleme und Verbesserungsziele gemeinsam klären."
+          },
+          {
+            "id": "re-prozess-einfuehren-q1-1",
+            "text": "Sofort das teuerste Tool kaufen."
+          },
+          {
+            "id": "re-prozess-einfuehren-q1-2",
+            "text": "Alle bestehenden Abläufe ungeprüft verbieten."
+          }
+        ],
+        "correctAnswerId": "re-prozess-einfuehren-q1-0",
+        "explanation": "Ein Prozess muss konkrete Probleme lösen und von den Beteiligten getragen werden."
+      },
+      {
+        "id": "re-prozess-einfuehren-q2",
+        "prompt": "Was muss neben einer gemeinsamen Ablage geregelt sein?",
+        "options": [
+          {
+            "id": "re-prozess-einfuehren-q2-1",
+            "text": "Nur das Logo des Projekts."
+          },
+          {
+            "id": "re-prozess-einfuehren-q2-2",
+            "text": "Ausschließlich die Anzahl der Dokumente."
+          },
+          {
+            "id": "re-prozess-einfuehren-q2-0",
+            "text": "Verantwortlichkeiten und Entscheidungspfade."
+          }
+        ],
+        "correctAnswerId": "re-prozess-einfuehren-q2-0",
+        "explanation": "Ohne klare Zuständigkeiten bleiben auch gut abgelegte Anforderungen ungeklärt."
+      },
+      {
+        "id": "re-prozess-einfuehren-q3",
+        "prompt": "Wozu dient ein Pilotbereich?",
+        "options": [
+          {
+            "id": "re-prozess-einfuehren-q3-2",
+            "text": "Eine vollständige Umsetzung aller Wünsche zu garantieren."
+          },
+          {
+            "id": "re-prozess-einfuehren-q3-0",
+            "text": "Den Ablauf mit echten Anforderungen erproben und verbessern."
+          },
+          {
+            "id": "re-prozess-einfuehren-q3-1",
+            "text": "Die Abstimmung dauerhaft auszusetzen."
+          }
+        ],
+        "correctAnswerId": "re-prozess-einfuehren-q3-0",
+        "explanation": "Ein überschaubarer Pilot liefert praktische Rückmeldung, bevor der Prozess breiter eingesetzt wird."
+      }
+    ]
+  },
+  {
+    "id": "http-methoden",
+    "categoryId": "it-grundwissen",
+    "title": "HTTP-Methoden verstehen",
+    "duration": 6,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Bei Web-APIs verrät die HTTP-Methode, welche Art von Aktion angefragt wird. Das hilft dir, Schnittstellenbeschreibungen fachlich einzuordnen.",
+    "sections": [
+      {
+        "id": "http-methoden-s1",
+        "heading": "Lesen und anlegen",
+        "paragraphs": [
+          "GET wird zum Abrufen von Daten verwendet, beispielsweise GET /kunden/123. Ein reiner Abruf soll keine fachliche Änderung auslösen.",
+          "POST wird häufig zum Anlegen einer Ressource verwendet, kann aber auch andere Aktionen auslösen. Die genaue Bedeutung beschreibt die jeweilige API-Dokumentation."
+        ]
+      },
+      {
+        "id": "http-methoden-s2",
+        "heading": "Ersetzen, teilweise ändern und löschen",
+        "paragraphs": [
+          "PUT beschreibt in der Regel das vollständige Ersetzen der Repräsentation einer Ressource an einer bekannten Adresse. PATCH steht für eine teilweise Änderung, etwa nur der Telefonnummer.",
+          "DELETE fordert das Entfernen einer Ressource an. Ob Daten tatsächlich gelöscht, zunächst deaktiviert oder aufbewahrt werden müssen, ist fachlich und rechtlich zu klären."
+        ]
+      },
+      {
+        "id": "http-methoden-s3",
+        "heading": "Anfrage, Daten und Fehler gemeinsam betrachten",
+        "paragraphs": [
+          "Eine Anfrage besteht nicht nur aus der Methode. Adresse, Parameter, gegebenenfalls Anfrageinhalt und Berechtigungen gehören ebenfalls dazu.",
+          "Kläre die erwartete Antwort und Fehlerfälle: Was passiert bei einer unbekannten ID, ungültigen Daten oder fehlendem Zugriff? Die Methode allein legt nicht alle Details fest."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine Telefonnummer aktualisieren",
+      "text": "Im Portal soll nur die Telefonnummer von Kundin 123 geändert werden. PATCH /kunden/123 kann dafür eine passende Schnittstelle sein, wenn sie so dokumentiert ist. Der RE klärt Eingabeformat, Berechtigung, Rückmeldung und Verhalten bei ungültigen Telefonnummern."
+    },
+    "takeaway": "GET liest, POST löst häufig eine Anlage aus, PUT ersetzt, PATCH ändert teilweise und DELETE entfernt – Details stehen im Schnittstellenvertrag.",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folien 2–3"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "http-methoden-q1",
+        "prompt": "Welche Methode dient typischerweise zum Lesen von Kundendaten?",
+        "options": [
+          {
+            "id": "http-methoden-q1-1",
+            "text": "DELETE"
+          },
+          {
+            "id": "http-methoden-q1-2",
+            "text": "PATCH"
+          },
+          {
+            "id": "http-methoden-q1-0",
+            "text": "GET"
+          }
+        ],
+        "correctAnswerId": "http-methoden-q1-0",
+        "explanation": "GET fragt Daten ab, ohne eine fachliche Änderung auslösen zu sollen."
+      },
+      {
+        "id": "http-methoden-q2",
+        "prompt": "Welche Methode passt typischerweise zur Änderung eines einzelnen Felds?",
+        "options": [
+          {
+            "id": "http-methoden-q2-2",
+            "text": "DELETE"
+          },
+          {
+            "id": "http-methoden-q2-0",
+            "text": "PATCH"
+          },
+          {
+            "id": "http-methoden-q2-1",
+            "text": "GET"
+          }
+        ],
+        "correctAnswerId": "http-methoden-q2-0",
+        "explanation": "PATCH ist für teilweise Änderungen vorgesehen; die API-Dokumentation legt das Format fest."
+      },
+      {
+        "id": "http-methoden-q3",
+        "prompt": "Was reicht für eine vollständige Schnittstellenanforderung nicht aus?",
+        "options": [
+          {
+            "id": "http-methoden-q3-0",
+            "text": "Nur die HTTP-Methode zu nennen."
+          },
+          {
+            "id": "http-methoden-q3-1",
+            "text": "Berechtigungen zu klären."
+          },
+          {
+            "id": "http-methoden-q3-2",
+            "text": "Fehlerfälle zu beschreiben."
+          }
+        ],
+        "correctAnswerId": "http-methoden-q3-0",
+        "explanation": "Auch Adresse, Daten, Berechtigungen und Rückmeldungen müssen abgestimmt werden."
+      }
+    ]
+  },
+  {
+    "id": "kafka-kommunikation",
+    "categoryId": "it-grundwissen",
+    "title": "Kafka: Ereignisse und asynchrone Kommunikation",
+    "duration": 8,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Ein System kann Daten direkt anfragen oder ein Ereignis veröffentlichen. Verstehe, warum dieser Unterschied für Anforderungen wichtig ist.",
+    "sections": [
+      {
+        "id": "kafka-kommunikation-s1",
+        "heading": "Synchron und asynchron unterscheiden",
+        "paragraphs": [
+          "Bei einer synchronen Anfrage wartet der aufrufende Ablauf auf die Antwort, etwa beim Abruf von Kundendaten. Bei asynchroner Verarbeitung muss das fachliche Ergebnis nicht sofort vorliegen.",
+          "REST-Aufrufe werden häufig synchron genutzt, Kafka unterstützt ereignisbasierte Verarbeitung. Das sind typische Einsatzmuster, keine Gleichsetzung von REST mit immer synchron und Kafka mit garantierter sofortiger Verarbeitung."
+        ]
+      },
+      {
+        "id": "kafka-kommunikation-s2",
+        "heading": "Producer, Topic und Consumer",
+        "paragraphs": [
+          "Ein Event beschreibt, dass etwas passiert ist, etwa „Bestellung erstellt“. Der Producer veröffentlicht es in einem Topic, einem benannten Nachrichtenstrom. Consumer lesen und verarbeiten die Ereignisse.",
+          "Unabhängige Consumer-Gruppen können dasselbe Ereignis für unterschiedliche Zwecke verarbeiten. Innerhalb einer Gruppe wird die Arbeit auf Consumer verteilt; dort erhält nicht automatisch jeder Consumer jedes Ereignis."
+        ]
+      },
+      {
+        "id": "kafka-kommunikation-s3",
+        "heading": "Anforderungen an verzögerte Verarbeitung",
+        "paragraphs": [
+          "Kläre, wann ein Vorgang fachlich abgeschlossen ist und welche Zwischenstände die Oberfläche anzeigt. „Nachricht gesendet“ bedeutet noch nicht „Rechnung erstellt“.",
+          "Besprich Verzögerungen, nicht verarbeitbare Nachrichten und doppelte Zustellungen mit der Entwicklung. Eine Verarbeitung sollte so gestaltet sein, dass Wiederholungen nicht versehentlich doppelte fachliche Aktionen auslösen."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine Bestellung, mehrere Reaktionen",
+      "text": "Der Shop veröffentlicht „Bestellung erstellt“. Lager, Rechnungsdienst und Benachrichtigungsdienst verarbeiten das Ereignis unabhängig über ihre Consumer-Gruppen. Ist der Rechnungsdienst kurzzeitig nicht verfügbar, kann die Rechnung später entstehen. Das Portal braucht deshalb einen klaren Status statt einer voreiligen Erfolgsmeldung."
+    },
+    "takeaway": "Ein Ereignis informiert über Geschehenes. Kläre bei asynchronen Abläufen Status, erwartete Verzögerung und Fehlerbehandlung.",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folien 4–5"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "kafka-kommunikation-q1",
+        "prompt": "Was beschreibt ein Event wie „Bestellung erstellt“?",
+        "options": [
+          {
+            "id": "kafka-kommunikation-q1-1",
+            "text": "Die Garantie, dass alle Folgesysteme fertig sind."
+          },
+          {
+            "id": "kafka-kommunikation-q1-2",
+            "text": "Eine Bildschirmfarbe."
+          },
+          {
+            "id": "kafka-kommunikation-q1-0",
+            "text": "Ein bereits eingetretenes fachliches Ereignis."
+          }
+        ],
+        "correctAnswerId": "kafka-kommunikation-q1-0",
+        "explanation": "Das Event meldet das Geschehen, nicht automatisch den Abschluss aller nachgelagerten Verarbeitung."
+      },
+      {
+        "id": "kafka-kommunikation-q2",
+        "prompt": "Welche Aufgabe hat ein Consumer?",
+        "options": [
+          {
+            "id": "kafka-kommunikation-q2-2",
+            "text": "Alle Producer ersetzen."
+          },
+          {
+            "id": "kafka-kommunikation-q2-0",
+            "text": "Ereignisse lesen und verarbeiten."
+          },
+          {
+            "id": "kafka-kommunikation-q2-1",
+            "text": "Immer die Benutzeroberfläche zeichnen."
+          }
+        ],
+        "correctAnswerId": "kafka-kommunikation-q2-0",
+        "explanation": "Consumer abonnieren Nachrichtenströme und reagieren auf die enthaltenen Ereignisse."
+      },
+      {
+        "id": "kafka-kommunikation-q3",
+        "prompt": "Was muss bei asynchroner Verarbeitung fachlich geklärt werden?",
+        "options": [
+          {
+            "id": "kafka-kommunikation-q3-0",
+            "text": "Zwischenstatus, Verzögerungen und Fehlerfälle."
+          },
+          {
+            "id": "kafka-kommunikation-q3-1",
+            "text": "Nur die Farbe des Senden-Buttons."
+          },
+          {
+            "id": "kafka-kommunikation-q3-2",
+            "text": "Dass jede Verarbeitung sofort abgeschlossen sein muss."
+          }
+        ],
+        "correctAnswerId": "kafka-kommunikation-q3-0",
+        "explanation": "Die Verarbeitung kann zeitversetzt erfolgen. Nutzende brauchen dazu verständliche Zustände und Rückmeldungen."
+      }
+    ]
+  },
+  {
+    "id": "software-umgebungen",
+    "categoryId": "it-grundwissen",
+    "title": "Development, Test und Produktion",
+    "duration": 6,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "„Fertig entwickelt“ heißt noch nicht „für Nutzende verfügbar“. Lerne die Aufgaben typischer Softwareumgebungen kennen.",
+    "sections": [
+      {
+        "id": "software-umgebungen-s1",
+        "heading": "Getrennte Orte für unterschiedliche Zwecke",
+        "paragraphs": [
+          "In Development wird Software entwickelt und angepasst. In einer Testumgebung werden Funktionen und Anforderungen geprüft.",
+          "Eine Integrationsumgebung ermöglicht Tests im Zusammenspiel mit angebundenen Systemen. Staging bildet eine produktionsnahe Prüfung ab. In Produktion arbeiten die tatsächlichen Nutzenden."
+        ]
+      },
+      {
+        "id": "software-umgebungen-s2",
+        "heading": "Namen und Abläufe sind projektspezifisch",
+        "paragraphs": [
+          "Anzahl und Bezeichnung der Umgebungen unterscheiden sich. Kürzel wie INT, E2E oder PROD sind im jeweiligen Projekt zu erklären. E2E kann sowohl einen Testansatz als auch den Namen einer Umgebung bezeichnen.",
+          "Deployments auf die Umgebungen finden häufig zeitversetzt statt. Prüfe deshalb immer Version und Umgebung, bevor du einen Fehler oder fehlendes Verhalten bewertest."
+        ]
+      },
+      {
+        "id": "software-umgebungen-s3",
+        "heading": "Bereitstellung und Freischaltung",
+        "paragraphs": [
+          "Deployment bedeutet, eine Softwareversion in eine Zielumgebung auszuliefern. Ein Produktivdeployment ist häufig eine Voraussetzung für die Nutzung einer Funktion.",
+          "Zusätzlich können Konfiguration, Berechtigungen oder Feature-Schalter über die Sichtbarkeit entscheiden. Verwende für Tests geeignete Testdaten und die vorgesehenen Zugänge."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Warum sehe ich das neue Feld nicht?",
+      "text": "Die Entwicklung meldet ein neues Adressfeld als fertig. Du prüfst in Produktion und findest es nicht. Nach Rückfrage zeigt sich: Die Version ist bisher nur auf der Testumgebung installiert. Vor der Abnahme werden passende Version, Berechtigungen und Testdaten abgestimmt."
+    },
+    "takeaway": "Kläre bei jeder Prüfung Umgebung, Softwareversion und Freischaltung. Entwicklungsabschluss und Produktivnutzung sind verschiedene Schritte.",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folie 6"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "software-umgebungen-q1",
+        "prompt": "Wo arbeiten die tatsächlichen Nutzenden im Live-Betrieb?",
+        "options": [
+          {
+            "id": "software-umgebungen-q1-0",
+            "text": "In Produktion."
+          },
+          {
+            "id": "software-umgebungen-q1-1",
+            "text": "Ausschließlich in Development."
+          },
+          {
+            "id": "software-umgebungen-q1-2",
+            "text": "Immer in Staging."
+          }
+        ],
+        "correctAnswerId": "software-umgebungen-q1-0",
+        "explanation": "Produktion ist die Umgebung für den tatsächlichen Betrieb."
+      },
+      {
+        "id": "software-umgebungen-q2",
+        "prompt": "Was prüft eine Integrationsumgebung besonders?",
+        "options": [
+          {
+            "id": "software-umgebungen-q2-1",
+            "text": "Nur die Rechtschreibung im Projektnamen."
+          },
+          {
+            "id": "software-umgebungen-q2-2",
+            "text": "Die Urlaubswünsche des Teams."
+          },
+          {
+            "id": "software-umgebungen-q2-0",
+            "text": "Das Zusammenspiel mehrerer Systeme."
+          }
+        ],
+        "correctAnswerId": "software-umgebungen-q2-0",
+        "explanation": "Integrationstests betrachten unter anderem Schnittstellen und angebundene Systeme."
+      },
+      {
+        "id": "software-umgebungen-q3",
+        "prompt": "Ein Feature fehlt trotz Fertigmeldung. Was prüfst du zuerst?",
+        "options": [
+          {
+            "id": "software-umgebungen-q3-2",
+            "text": "Ob das Team einen anderen Namen braucht."
+          },
+          {
+            "id": "software-umgebungen-q3-0",
+            "text": "Ob die richtige Version in der richtigen Umgebung verfügbar und freigeschaltet ist."
+          },
+          {
+            "id": "software-umgebungen-q3-1",
+            "text": "Ob jede Anforderung gelöscht wurde."
+          }
+        ],
+        "correctAnswerId": "software-umgebungen-q3-0",
+        "explanation": "Eine Funktion kann fertig sein, aber noch nicht bereitgestellt oder freigegeben worden sein."
+      }
+    ]
+  },
+  {
+    "id": "api-dokumentation",
+    "categoryId": "it-grundwissen",
+    "title": "APIs mit OpenAPI und Postman verstehen",
+    "duration": 7,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Eine Schnittstellenbeschreibung zeigt das vereinbarte Verhalten. Ein API-Aufruf hilft zu prüfen, was eine konkrete Implementierung tatsächlich liefert.",
+    "sections": [
+      {
+        "id": "api-dokumentation-s1",
+        "heading": "OpenAPI und Swagger einordnen",
+        "paragraphs": [
+          "OpenAPI ist ein Standard zur Beschreibung von HTTP-APIs. Swagger bezeichnet Werkzeuge rund um diese Beschreibungen, beispielsweise eine interaktive Dokumentationsoberfläche.",
+          "Dort findest du häufig Endpunkte, Methoden, Parameter, Datenmodelle, Antworten und mögliche Fehler. Eine interaktive Dokumentation kann je nach Einrichtung auch Aufrufe ausführen."
+        ]
+      },
+      {
+        "id": "api-dokumentation-s2",
+        "heading": "Mit Postman Anfragen ausprobieren",
+        "paragraphs": [
+          "Postman ist ein Werkzeug zum Erstellen und Senden von API-Anfragen sowie zum Untersuchen von Antworten. Du siehst etwa Statuscode und Antwortinhalt.",
+          "Für einen sinnvollen Test brauchst du die passende Umgebung, erlaubte Zugangsdaten und geeignete Testdaten. Schreibende oder löschende Anfragen sollten nur im vereinbarten Testkontext ausgeführt werden."
+        ]
+      },
+      {
+        "id": "api-dokumentation-s3",
+        "heading": "Vertrag und tatsächliches Verhalten vergleichen",
+        "paragraphs": [
+          "Vergleiche erwartete Felder, Formate, Statuscodes und Berechtigungen mit der Antwort. Dokumentiere Abweichungen mit Anfrage, Umgebung und erwarteter Reaktion, ohne Geheimnisse mitzukopieren.",
+          "Ein einzelner erfolgreicher Aufruf beweist nicht, dass alle Anforderungen erfüllt sind. Prüfe auch fehlende Berechtigungen, unbekannte IDs und ungültige Eingaben."
+        ]
+      }
+    ],
+    "example": {
+      "title": "GET /kunden/123 nachvollziehen",
+      "text": "Die Beschreibung nennt eine Kunden-ID als Parameter und Name sowie Kontaktangaben als Antwort. In der Testumgebung rufst du den Endpunkt mit einem freigegebenen Testkonto auf. Fehlt ein vereinbartes Feld, klärst du, ob Dokumentation, Implementierung oder Testdaten angepasst werden müssen."
+    },
+    "takeaway": "OpenAPI beschreibt den Schnittstellenvertrag; mit einem API-Client wie Postman vergleichst du ihn mit dem tatsächlichen Verhalten.",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folie 7"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "api-dokumentation-q1",
+        "prompt": "Was beschreibt OpenAPI?",
+        "options": [
+          {
+            "id": "api-dokumentation-q1-2",
+            "text": "Alle internen Algorithmen eines Unternehmens."
+          },
+          {
+            "id": "api-dokumentation-q1-0",
+            "text": "Struktur und Verhalten einer HTTP-API."
+          },
+          {
+            "id": "api-dokumentation-q1-1",
+            "text": "Die Urlaubsplanung des Teams."
+          }
+        ],
+        "correctAnswerId": "api-dokumentation-q1-0",
+        "explanation": "OpenAPI beschreibt den Schnittstellenvertrag, etwa Endpunkte, Parameter und Antworten."
+      },
+      {
+        "id": "api-dokumentation-q2",
+        "prompt": "Was kannst du mit Postman untersuchen?",
+        "options": [
+          {
+            "id": "api-dokumentation-q2-0",
+            "text": "Die Antwort auf eine tatsächlich gesendete API-Anfrage."
+          },
+          {
+            "id": "api-dokumentation-q2-1",
+            "text": "Ob jede Fachanforderung automatisch korrekt ist."
+          },
+          {
+            "id": "api-dokumentation-q2-2",
+            "text": "Nur das Logo einer Anwendung."
+          }
+        ],
+        "correctAnswerId": "api-dokumentation-q2-0",
+        "explanation": "Ein API-Client erlaubt konkrete Aufrufe und die Untersuchung der erhaltenen Antworten."
+      },
+      {
+        "id": "api-dokumentation-q3",
+        "prompt": "Was gehört zu einem nachvollziehbaren Testbefund?",
+        "options": [
+          {
+            "id": "api-dokumentation-q3-1",
+            "text": "Nur „geht nicht“."
+          },
+          {
+            "id": "api-dokumentation-q3-2",
+            "text": "Das Passwort im öffentlichen Kommentar."
+          },
+          {
+            "id": "api-dokumentation-q3-0",
+            "text": "Anfrage, Umgebung, erwartete und tatsächliche Antwort ohne Geheimnisse."
+          }
+        ],
+        "correctAnswerId": "api-dokumentation-q3-0",
+        "explanation": "Ein genauer Befund hilft bei der Klärung und schützt zugleich vertrauliche Zugangsdaten."
+      }
+    ]
+  },
+  {
+    "id": "code-lesen",
+    "categoryId": "it-grundwissen",
+    "title": "Fachliche Regeln im Code erkennen",
+    "duration": 5,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Als RE musst du nicht jede technische Einzelheit verstehen. Schon einfache Bedingungen helfen, fachliche Regeln und offene Fragen zu erkennen.",
+    "sections": [
+      {
+        "id": "code-lesen-s1",
+        "heading": "Daten und Bedingungen identifizieren",
+        "paragraphs": [
+          "Suche zuerst nach den verwendeten Daten. In einem Beispiel wie „wenn kunde.alter >= 18, dann freigabe = wahr, sonst freigabe = falsch“ wird das Alter mit einer Grenze verglichen.",
+          "Das Zeichen >= bedeutet „größer oder gleich“. Im Beispiel führt deshalb auch das Alter 18 zur Freigabe. Der Sonst-Zweig beschreibt den anderen Fall."
+        ]
+      },
+      {
+        "id": "code-lesen-s2",
+        "heading": "Den fachlichen Sinn hinterfragen",
+        "paragraphs": [
+          "Übersetze die Bedingung in Alltagssprache: Personen ab 18 erhalten hier eine Freigabe. Prüfe dann, ob genau diese Regel fachlich vereinbart wurde.",
+          "Frage nach Grenzwerten, fehlenden Angaben und ungültigen Daten. Was soll passieren, wenn das Alter unbekannt ist? Der kurze Ausschnitt allein beantwortet das möglicherweise nicht."
+        ]
+      },
+      {
+        "id": "code-lesen-s3",
+        "heading": "Ausschnitt und Gesamtverhalten unterscheiden",
+        "paragraphs": [
+          "Ein Codeausschnitt zeigt nur einen Teil des Systems. Weitere Prüfungen oder Fehlerbehandlungen können an anderer Stelle liegen.",
+          "Leite daraus gezielte Rückfragen und Testfälle ab und stimme die Interpretation mit der Entwicklung ab. Ein plausibel wirkender Ausschnitt ersetzt keine fachliche Prüfung der gesamten Funktion."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Die Grenze prüfen",
+      "text": "Für die Beispielregel „Alter >= 18“ prüfst du die Fälle 17, 18 und 19 sowie eine fehlende Altersangabe. Die ersten drei Fälle machen die Grenze sichtbar; der vierte zeigt eine offene Frage. Das Beispiel erklärt eine Bedingung und ist keine allgemeine Vorgabe zur rechtlichen Freigabe."
+    },
+    "takeaway": "Erkenne Daten, Bedingungen und Ergebnisse. Übersetze sie in fachliche Sprache und frage nach Grenzen und fehlenden Angaben.",
+    "sources": [
+      {
+        "documentId": "technik",
+        "locator": "Folie 8"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "code-lesen-q1",
+        "prompt": "Was bedeutet „alter >= 18“ im Beispiel?",
+        "options": [
+          {
+            "id": "code-lesen-q1-1",
+            "text": "Das Alter muss größer als 18 sein, 18 reicht nicht."
+          },
+          {
+            "id": "code-lesen-q1-2",
+            "text": "Das Alter ist immer unbekannt."
+          },
+          {
+            "id": "code-lesen-q1-0",
+            "text": "Das Alter ist mindestens 18."
+          }
+        ],
+        "correctAnswerId": "code-lesen-q1-0",
+        "explanation": "Größer oder gleich schließt den Grenzwert 18 ein."
+      },
+      {
+        "id": "code-lesen-q2",
+        "prompt": "Welche Frage deckt eine mögliche Lücke auf?",
+        "options": [
+          {
+            "id": "code-lesen-q2-2",
+            "text": "Wie heißt der Meetingraum?"
+          },
+          {
+            "id": "code-lesen-q2-0",
+            "text": "Was passiert, wenn die Altersangabe fehlt?"
+          },
+          {
+            "id": "code-lesen-q2-1",
+            "text": "Welche Schriftart hat der Codeeditor?"
+          }
+        ],
+        "correctAnswerId": "code-lesen-q2-0",
+        "explanation": "Fehlende oder ungültige Daten benötigen ein abgestimmtes Verhalten."
+      },
+      {
+        "id": "code-lesen-q3",
+        "prompt": "Was beweist ein kurzer Codeausschnitt?",
+        "options": [
+          {
+            "id": "code-lesen-q3-0",
+            "text": "Nur das sichtbare Teilverhalten; der weitere Kontext muss geprüft werden."
+          },
+          {
+            "id": "code-lesen-q3-1",
+            "text": "Dass die gesamte Anwendung fehlerfrei ist."
+          },
+          {
+            "id": "code-lesen-q3-2",
+            "text": "Dass keine Anforderungen mehr nötig sind."
+          }
+        ],
+        "correctAnswerId": "code-lesen-q3-0",
+        "explanation": "Zusätzliche Regeln und Prüfungen können außerhalb des Ausschnitts liegen."
+      }
+    ]
+  },
+  {
+    "id": "initiative-epic-story",
+    "categoryId": "it-projekte",
+    "title": "Von der Initiative zur User Story",
+    "duration": 7,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Große Ziele werden erst durch überschaubare Umsetzungsschritte greifbar. Initiative, Epic, Story und Task helfen dabei, verschiedene Ebenen zu unterscheiden.",
+    "sections": [
+      {
+        "id": "initiative-epic-story-s1",
+        "heading": "Vom Geschäftsziel zum Funktionspaket",
+        "paragraphs": [
+          "Eine Initiative beschreibt in vielen Organisationen ein strategisches Vorhaben mit Geschäftsziel, etwa weniger manuelle Supportanfragen durch ein Kundenportal.",
+          "Ein Epic bündelt einen größeren fachlichen Bereich, beispielsweise Vertragsverwaltung. Es wird in kleinere, umsetzbare Stories zerlegt. Die genaue Hierarchie und Benennung hängt vom Projekt ab."
+        ]
+      },
+      {
+        "id": "initiative-epic-story-s2",
+        "heading": "Nutzerbedürfnis und Umsetzung unterscheiden",
+        "paragraphs": [
+          "Eine User Story beschreibt ein konkretes Bedürfnis aus Sicht einer Rolle und den erwarteten Nutzen. Beispiel: „Als Kundin möchte ich meine Verträge anzeigen, um Laufzeiten zu prüfen.“",
+          "Tasks beschreiben Tätigkeiten zur Umsetzung, etwa eine Datenabfrage anzubinden. Ein technischer Task und ein Nutzerbedürfnis liegen auf unterschiedlichen Ebenen."
+        ]
+      },
+      {
+        "id": "initiative-epic-story-s3",
+        "heading": "Kleine, wertvolle Schritte bilden",
+        "paragraphs": [
+          "Schneide Stories so, dass sie einen nachvollziehbaren Nutzen liefern und im vereinbarten Arbeitsrahmen umsetzbar sind. Eine Story sollte fachlich prüfbar sein.",
+          "Mache Abhängigkeiten sichtbar. Die Vertragsübersicht kann etwa eine verfügbare Datenquelle und eine Berechtigungsprüfung benötigen. Nicht jede Abhängigkeit lässt sich durch einen neuen Titel auflösen."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Kundenportal schrittweise entwickeln",
+      "text": "Initiative: Kunden erledigen mehr Anliegen selbst. Epic: Vertragsverwaltung. Erste Story: Eigene aktive Verträge anzeigen. Weitere Stories: Vertragsdokument herunterladen und eine Kündigung anfragen. Ein technischer Task innerhalb der ersten Story ist die Anbindung der Vertragsabfrage."
+    },
+    "takeaway": "Verbinde strategische Ziele mit fachlichen Paketen und kleinen Nutzerbedürfnissen. Halte technische Umsetzungsschritte davon unterscheidbar.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Von der Initiative zur User Story"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "initiative-epic-story-q1",
+        "prompt": "Welche Ebene beschreibt typischerweise ein strategisches Geschäftsziel?",
+        "options": [
+          {
+            "id": "initiative-epic-story-q1-2",
+            "text": "Ein Fehlerprotokoll."
+          },
+          {
+            "id": "initiative-epic-story-q1-0",
+            "text": "Eine Initiative."
+          },
+          {
+            "id": "initiative-epic-story-q1-1",
+            "text": "Ein einzelner technischer Task."
+          }
+        ],
+        "correctAnswerId": "initiative-epic-story-q1-0",
+        "explanation": "Initiativen bündeln in vielen Organisationen größere Vorhaben mit einem Geschäftsziel."
+      },
+      {
+        "id": "initiative-epic-story-q2",
+        "prompt": "Was beschreibt eine User Story?",
+        "options": [
+          {
+            "id": "initiative-epic-story-q2-0",
+            "text": "Ein konkretes Nutzerbedürfnis mit erkennbarem Nutzen."
+          },
+          {
+            "id": "initiative-epic-story-q2-1",
+            "text": "Immer das gesamte Produkt."
+          },
+          {
+            "id": "initiative-epic-story-q2-2",
+            "text": "Ausschließlich eine Liste von Datenbanktabellen."
+          }
+        ],
+        "correctAnswerId": "initiative-epic-story-q2-0",
+        "explanation": "Stories machen den fachlichen Bedarf aus einer Nutzerperspektive verständlich."
+      },
+      {
+        "id": "initiative-epic-story-q3",
+        "prompt": "Wie gehst du mit einer benötigten Datenquelle um?",
+        "options": [
+          {
+            "id": "initiative-epic-story-q3-1",
+            "text": "Sie aus dem Ticket entfernen, damit die Story kleiner aussieht."
+          },
+          {
+            "id": "initiative-epic-story-q3-2",
+            "text": "Eine Umsetzung ohne Zugriff versprechen."
+          },
+          {
+            "id": "initiative-epic-story-q3-0",
+            "text": "Die Abhängigkeit sichtbar machen und mit den Beteiligten klären."
+          }
+        ],
+        "correctAnswerId": "initiative-epic-story-q3-0",
+        "explanation": "Sichtbare Abhängigkeiten ermöglichen eine realistische Planung."
+      }
+    ]
+  },
+  {
+    "id": "roadmap-item-prozess",
+    "categoryId": "it-projekte",
+    "title": "Vom Roadmap-Item zur Abnahme",
+    "duration": 9,
+    "status": "available",
+    "format": "lesson",
+    "introduction": "Begleite ein Vorhaben vom groben Bedarf bis zur fachlichen Prüfung. Der Ablauf orientiert sich an euren Unterlagen und ist ein Projektbeispiel, kein universeller Pflichtprozess.",
+    "sections": [
+      {
+        "id": "roadmap-item-prozess-s1",
+        "heading": "Bedarf und grobes Konzept",
+        "paragraphs": [
+          "RE wirkt an der Befüllung und Priorisierung des Backlogs mit, gemeinsam mit Produktverantwortlichen und gegebenenfalls Projektleitung. Ein zugewiesenes Roadmap-Item wird zunächst fachlich eingeordnet.",
+          "Ein Grobkonzept oder eine Epic Card bündelt Problem, Ziel, Umfang und offene Fragen. Mit der Entwicklung werden technische Machbarkeit, erste Storyschnitte, Aufwand und Abhängigkeiten besprochen."
+        ]
+      },
+      {
+        "id": "roadmap-item-prozess-s2",
+        "heading": "Konzept gemeinsam konkretisieren",
+        "paragraphs": [
+          "Fachbereich und Architektur helfen, Details in einem Concept Paper zu klären. Produktverantwortliche geben Feedback zu Nutzen, Priorität und Roadmap.",
+          "Wenn Schnittstellen betroffen sind, werden die zuständigen Systemteams einbezogen. Rechtlich relevante Fragen gehen an die zuständigen Fachleute. UI/UX gestaltet die Nutzerführung im regelmäßigen Austausch mit RE und Entwicklung. Die konkreten Gremien und Freigaben sind projektspezifisch."
+        ]
+      },
+      {
+        "id": "roadmap-item-prozess-s3",
+        "heading": "Iterativ abstimmen und umsetzbar machen",
+        "paragraphs": [
+          "Inhalt, Termine, Abhängigkeiten und offene Entscheidungen werden fortlaufend überprüft. Neue Erkenntnisse können frühere Annahmen verändern. Der Prozess ist deshalb nicht einfach eine starre Übergabekette.",
+          "User Stories, Akzeptanzkriterien und Screens werden aufeinander abgestimmt. Im fachlichen oder technischen Refinement klärt das Team Verständnis, Risiken und Schätzungen. Danach wird die Arbeit im Rahmen der Sprintplanung eingeplant."
+        ]
+      },
+      {
+        "id": "roadmap-item-prozess-s4",
+        "heading": "Abnahme und Rückkopplung",
+        "paragraphs": [
+          "Bei der fachlichen Abnahme wird anhand der vereinbarten Akzeptanzkriterien geprüft, ob das erwartete Verhalten vorliegt. Abweichungen werden nachvollziehbar erfasst und mit den Beteiligten bewertet.",
+          "Je nach Projekt folgen Freigabe, Marktkommunikation und weitere Abstimmungen. Eine Retrospektive betrachtet zusätzlich die Zusammenarbeit und leitet Verbesserungen ab."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Statusmeldungen für einen Auftrag",
+      "text": "Ein Roadmap-Item soll Rückfragen zum Auftragsstatus reduzieren. RE klärt den Bedarf, stimmt verfügbare Statusdaten mit dem Systemteam und die Anzeige mit UI/UX ab. Falls die Meldungen rechtlich relevant sind, wird die zuständige Stelle einbezogen. Vor der Umsetzung werden Stories und Kriterien abgestimmt; bei der Abnahme werden normale und fehlerhafte Statuswechsel geprüft."
+    },
+    "takeaway": "Halte Problem, Konzept, Stories und Abnahme zusammen. Beziehe betroffene Rollen früh ein und überprüfe Entscheidungen laufend.",
+    "sources": [
+      {
+        "documentId": "roadmap",
+        "locator": "Folie 1, zusammengefasster und sprachlich bereinigter Ablauf"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "roadmap-item-prozess-q1",
+        "prompt": "Was gehört in die frühe Klärung eines Roadmap-Items?",
+        "options": [
+          {
+            "id": "roadmap-item-prozess-q1-2",
+            "text": "Eine Abnahme ohne Umsetzung."
+          },
+          {
+            "id": "roadmap-item-prozess-q1-0",
+            "text": "Problem, Ziel, Umfang und offene Fragen."
+          },
+          {
+            "id": "roadmap-item-prozess-q1-1",
+            "text": "Nur eine fertige Bildschirmfarbe."
+          }
+        ],
+        "correctAnswerId": "roadmap-item-prozess-q1-0",
+        "explanation": "Das Grobkonzept schafft die Grundlage für fachliche und technische Abstimmung."
+      },
+      {
+        "id": "roadmap-item-prozess-q2",
+        "prompt": "Wann sollten betroffene Systemteams einbezogen werden?",
+        "options": [
+          {
+            "id": "roadmap-item-prozess-q2-0",
+            "text": "Frühzeitig, wenn Schnittstellen oder Abhängigkeiten betroffen sind."
+          },
+          {
+            "id": "roadmap-item-prozess-q2-1",
+            "text": "Erst nach dem Produktivstart."
+          },
+          {
+            "id": "roadmap-item-prozess-q2-2",
+            "text": "Grundsätzlich nie."
+          }
+        ],
+        "correctAnswerId": "roadmap-item-prozess-q2-0",
+        "explanation": "Frühe Klärung reduziert das Risiko, auf nicht verfügbare Schnittstellen zu planen."
+      },
+      {
+        "id": "roadmap-item-prozess-q3",
+        "prompt": "Woran orientiert sich die fachliche Abnahme?",
+        "options": [
+          {
+            "id": "roadmap-item-prozess-q3-1",
+            "text": "Nur daran, ob ein Ticket grün markiert ist."
+          },
+          {
+            "id": "roadmap-item-prozess-q3-2",
+            "text": "An der Länge des Concept Papers."
+          },
+          {
+            "id": "roadmap-item-prozess-q3-0",
+            "text": "An den vereinbarten Akzeptanzkriterien und dem erwarteten Verhalten."
+          }
+        ],
+        "correctAnswerId": "roadmap-item-prozess-q3-0",
+        "explanation": "Eine Statusmarkierung ersetzt keine Prüfung des vereinbarten Ergebnisses."
+      }
+    ]
   }
 ]

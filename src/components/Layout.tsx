@@ -4,9 +4,16 @@ import { ArrowUpRight, BookOpen, Grid2X2, GraduationCap } from 'lucide-react'
 import { categories } from '../content'
 import { Icon } from './Icon'
 export function Layout() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   const main = useRef<HTMLElement>(null)
-  useEffect(() => { window.scrollTo(0, 0); main.current?.focus() }, [pathname])
+  useEffect(() => {
+    if (hash) {
+      document.getElementById(hash.slice(1))?.scrollIntoView()
+    } else {
+      window.scrollTo(0, 0)
+      main.current?.focus()
+    }
+  }, [pathname, hash])
   return <div className="app-shell">
     <a className="skip-link" href="#inhalt">Zum Inhalt springen</a>
     <aside className="sidebar">

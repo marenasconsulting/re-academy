@@ -1,0 +1,865 @@
+[
+  {
+    "id": "eisenhower",
+    "categoryId": "re-praxis",
+    "title": "Eisenhower-Matrix",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Aufgaben nach Wichtigkeit und Dringlichkeit einordnen – für eine schnelle Orientierung im Arbeitsalltag.",
+    "sections": [
+      {
+        "id": "eisenhower-s1",
+        "heading": "Die vier Felder",
+        "paragraphs": [
+          "Wichtig und dringend: zeitnah bearbeiten. Wichtig und nicht dringend: bewusst einplanen. Nicht wichtig und dringend: prüfen, ob delegiert werden kann. Weder wichtig noch dringend: hinterfragen und gegebenenfalls weglassen.",
+          "Wichtigkeit bezieht sich auf Ziele und Folgen; Dringlichkeit auf den Zeitfaktor. Ein lauter Wunsch ist nicht automatisch wichtig."
+        ]
+      },
+      {
+        "id": "eisenhower-s2",
+        "heading": "Anwendung im RE",
+        "paragraphs": [
+          "Sammelt Aufgaben, vereinbart die beiden Maßstäbe und ordnet gemeinsam ein. Dokumentiert strittige Annahmen und überprüft die Zuordnung bei neuen Erkenntnissen."
+        ]
+      },
+      {
+        "id": "eisenhower-s3",
+        "heading": "Nutzen und Grenzen",
+        "paragraphs": [
+          "Die Matrix ist einfach und visuell verständlich. Sie unterstützt die persönliche Aufgabensteuerung und eine erste Orientierung im Team.",
+          "Komplexe Abhängigkeiten, konkrete Aufwände und konkurrierende Produktziele bildet sie nur begrenzt ab. Sie ersetzt keine fundierte Produktpriorisierung."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Dokumentation rechtzeitig planen",
+      "text": "Die Pflege einer Schnittstellenbeschreibung ist wichtig, aber vorerst nicht dringend. Sie wird verbindlich eingeplant. Ein Fehler im Kernprozess kann dagegen dringend und wichtig sein. Die Einordnung wird anhand der tatsächlichen Auswirkungen geprüft."
+    },
+    "takeaway": "Trenne Bedeutung und Zeitdruck. Nutze die Matrix als Gesprächshilfe und überprüfe die Bewertung regelmäßig.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 2–7"
+      }
+    ]
+  },
+  {
+    "id": "uml-use-cases",
+    "categoryId": "re-praxis",
+    "title": "UML: Anwendungsfälle modellieren",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Akteure, Systemgrenzen und Ziele sichtbar machen, ohne schon die technische Lösung festzulegen.",
+    "sections": [
+      {
+        "id": "uml-use-cases-s1",
+        "heading": "System und Akteure",
+        "paragraphs": [
+          "Die Systemgrenze zeigt, was zum betrachteten System gehört. Akteure befinden sich außerhalb dieser Grenze und interagieren mit ihm. Das können Personenrollen oder andere Systeme sein.",
+          "Ein Anwendungsfall beschreibt ein Ziel, das ein Akteur mithilfe des Systems erreicht. Ein primärer Akteur stößt den Anwendungsfall typischerweise an; unterstützende Akteure wirken daran mit."
+        ]
+      },
+      {
+        "id": "uml-use-cases-s2",
+        "heading": "Beziehungen richtig lesen",
+        "paragraphs": [
+          "Eine Assoziation verbindet Akteur und Anwendungsfall. «include» bindet Verhalten ein, das im betrachteten Ablauf benötigt wird. «extend» ergänzt einen Anwendungsfall unter bestimmten Bedingungen.",
+          "Generalisierung bildet Spezialisierungen ab. Eine Erweiterung mit «extend» ist von dem verpflichtend eingebundenen Verhalten bei «include» zu unterscheiden."
+        ]
+      },
+      {
+        "id": "uml-use-cases-s3",
+        "heading": "Vom Bild zur Beschreibung",
+        "paragraphs": [
+          "Das Diagramm gibt einen Überblick, beschreibt aber nicht alle Schritte und Ausnahmen. Ergänze für wichtige Anwendungsfälle Vorbedingungen, Hauptablauf, Alternativen und erwartete Ergebnisse.",
+          "Prüfe mit Fachbereich und Entwicklung, ob Akteure und Grenzen vollständig sind. Ein überladenes Diagramm verliert schnell seinen Kommunikationswert."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Überweisung in einer Banking-App",
+      "text": "Die Kundenrolle nutzt „Überweisung ausführen“. Der externe Bankdienst ist ein unterstützender Akteur. Eine erforderliche Prüfung kann eingebunden werden; zusätzliche bedingte Abläufe werden getrennt beschrieben. Fehlerfälle sollten auch im textlichen Ablauf erkennbar sein."
+    },
+    "takeaway": "Use Cases verbinden Akteure mit ihren Zielen. Das Diagramm schafft Überblick; konkrete Abläufe und Ausnahmen brauchen ergänzende Beschreibung.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 8–17"
+      }
+    ]
+  },
+  {
+    "id": "uml-klassen",
+    "categoryId": "re-praxis",
+    "title": "UML: Klassendiagramme lesen",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Fachliche Begriffe, Eigenschaften und Beziehungen strukturiert darstellen.",
+    "sections": [
+      {
+        "id": "uml-klassen-s1",
+        "heading": "Klasse und Objekt unterscheiden",
+        "paragraphs": [
+          "Eine Klasse beschreibt einen Typ von Objekten mit gemeinsamen Eigenschaften. Ein Objekt ist eine konkrete Instanz, etwa der Vertrag mit der Nummer 123.",
+          "Attribute beschreiben Daten wie Vertragsnummer und Laufzeit. Operationen beschreiben mögliches Verhalten. Sichtbarkeit kann mit + für öffentlich, − für privat und # für geschützt gekennzeichnet werden."
+        ]
+      },
+      {
+        "id": "uml-klassen-s2",
+        "heading": "Beziehungen erkennen",
+        "paragraphs": [
+          "Eine Assoziation beschreibt eine Beziehung zwischen Klassen. Vererbung beschreibt eine Spezialisierung. Aggregation und Komposition modellieren unterschiedliche Formen von Teil-Ganzes-Beziehungen.",
+          "Komposition bedeutet eine starke Zuordnung eines Teils zu einem Ganzen. Ihre genauen Konsequenzen sollten zur modellierten fachlichen Bedeutung passen und nicht nur aus dem Symbol erraten werden."
+        ]
+      },
+      {
+        "id": "uml-klassen-s3",
+        "heading": "Multiplizitäten klären",
+        "paragraphs": [
+          "0..1 bedeutet kein oder ein Objekt, 0..* beliebig viele einschließlich null und 1..* mindestens eines. Eine feste Zahl oder ein Bereich kann die Anzahl genauer begrenzen.",
+          "Kläre insbesondere die Null-Fälle: Muss eine Beziehung vorhanden sein? Welche fachlichen Regeln gelten bei Löschung oder Änderung?"
+        ]
+      }
+    ],
+    "example": {
+      "title": "Kundin und Vertrag",
+      "text": "Eine Kundin kann 0..* Verträge haben. Jeder Vertrag gehört im vereinfachten Modell genau einer Kundin. Ob gemeinsame Verträge erlaubt sind, ist eine fachliche Rückfrage und verändert gegebenenfalls die Multiplizität."
+    },
+    "takeaway": "Klassendiagramme helfen, Begriffe und Beziehungen abzustimmen. Klasse, konkrete Instanz und Anzahl sind unterschiedliche Aspekte.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 18–22"
+      }
+    ]
+  },
+  {
+    "id": "moscow",
+    "categoryId": "re-praxis",
+    "title": "MoSCoW priorisieren",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Ein gemeinsames Verständnis darüber schaffen, was im betrachteten Lieferumfang notwendig, wichtig, optional oder ausgeschlossen ist.",
+    "sections": [
+      {
+        "id": "moscow-s1",
+        "heading": "Vier Kategorien",
+        "paragraphs": [
+          "Must have: für das vereinbarte Ziel oder die betrachtete Lieferung unverzichtbar. Should have: wichtig, aber im Notfall überbrückbar. Could have: sinnvoll, wenn die Kapazität reicht. Won’t have this time: in diesem Zeitraum bewusst nicht enthalten.",
+          "Won’t bedeutet nicht automatisch „niemals“. Vereinbart immer den zeitlichen Bezug und das Ziel."
+        ]
+      },
+      {
+        "id": "moscow-s2",
+        "heading": "Gemeinsam begründen",
+        "paragraphs": [
+          "Sammelt Anforderungen und besprecht Folgen, falls eine Anforderung fehlt. Haltet die Begründung fest und prüft, ob der gesamte Must-Umfang realistisch lieferbar ist."
+        ]
+      },
+      {
+        "id": "moscow-s3",
+        "heading": "Grenzen beachten",
+        "paragraphs": [
+          "Die Methode ist leicht verständlich, ordnet innerhalb einer Kategorie aber nicht automatisch weiter. Werden alle Wünsche zu Musts erklärt, verliert sie ihre Wirkung.",
+          "Abhängigkeiten, gesetzliche Pflichten und Kapazitäten müssen zusätzlich betrachtet werden."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine HR-Lösung einführen",
+      "text": "Für einen vereinbarten Start können Anmeldung und notwendiger Datenschutz unverzichtbar sein. Ein zusätzlicher Self-Service ist möglicherweise wichtig, eine mobile App optional. Eine zusätzliche externe Anbindung wird für dieses Release ausgeschlossen. Die Zuordnung hängt vom konkreten Ziel ab."
+    },
+    "takeaway": "MoSCoW priorisiert bezogen auf einen konkreten Umfang und Zeitraum. Begründete Grenzen sind genauso wichtig wie Musts.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 23–26"
+      }
+    ]
+  },
+  {
+    "id": "notion-wissen",
+    "categoryId": "re-praxis",
+    "title": "Notion als Wissensplattform",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Dokumentation, Aufgaben und strukturierte Informationen in einem gemeinsamen Arbeitsbereich organisieren.",
+    "sections": [
+      {
+        "id": "notion-wissen-s1",
+        "heading": "Was das Werkzeug bündelt",
+        "paragraphs": [
+          "Notion kombiniert Seiten, ein Wiki, strukturierte Datenansichten und Funktionen zur Zusammenarbeit. Damit lassen sich etwa ein Projektglossar, Gesprächsergebnisse und eine offene Fragenliste verbinden."
+        ]
+      },
+      {
+        "id": "notion-wissen-s2",
+        "heading": "Sinnvoll einsetzen",
+        "paragraphs": [
+          "Vereinbart wenige Vorlagen, klare Zuständigkeiten und eine nachvollziehbare Struktur. Verlinkt Inhalte und benennt eine verbindliche Quelle, wenn zusätzlich ein Ticketsystem genutzt wird.",
+          "Zugriffsrechte, Exportmöglichkeiten und die Freigabe durch die Organisation müssen zum Einsatz passen. Verfügbarkeit und Vertragsbedingungen werden vor Nutzung geprüft."
+        ]
+      },
+      {
+        "id": "notion-wissen-s3",
+        "heading": "Nicht im Werkzeugbau verlieren",
+        "paragraphs": [
+          "Eine flexible Oberfläche kann dazu verleiten, mehr Zeit in perfekte Vorlagen als in fachliche Arbeit zu investieren. Prüft deshalb, ob eine Anpassung ein reales Problem löst.",
+          "Kein Werkzeug passt automatisch zu jedem Bedarf. Wählt es anhand von Zusammenarbeit, Nachvollziehbarkeit und Pflegeaufwand aus."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein gemeinsames Projektglossar",
+      "text": "Das Team führt Begriffe in einer einheitlichen Vorlage und verlinkt sie mit Entscheidungsnotizen. Eine verantwortliche Rolle pflegt offene Begriffe. Es baut keine zweite konkurrierende Ticketverwaltung auf."
+    },
+    "takeaway": "Das Werkzeug soll Wissen nutzbar machen. Eine einfache gepflegte Struktur hilft mehr als ein aufwendig gebautes, ungenutztes System.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 27–33"
+      }
+    ]
+  },
+  {
+    "id": "fit-gap",
+    "categoryId": "re-praxis",
+    "title": "Fit-Gap-Analyse",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Ist und Soll vergleichen, um passende Funktionen und tatsächlichen Anpassungsbedarf zu unterscheiden.",
+    "sections": [
+      {
+        "id": "fit-gap-s1",
+        "heading": "Zielbild zuerst beschreiben",
+        "paragraphs": [
+          "Ein Fit liegt vor, wenn die bestehende Lösung eine vereinbarte Anforderung erfüllt. Ein Gap ist eine Abweichung oder fehlende Fähigkeit. Ohne klares Soll lässt sich diese Bewertung nicht begründen."
+        ]
+      },
+      {
+        "id": "fit-gap-s2",
+        "heading": "Schrittweise vergleichen",
+        "paragraphs": [
+          "Beschreibt je Prozess oder Anforderung den Sollzustand und die aktuelle Unterstützung. Haltet die Bewertung mit Nachweisen, offenen Fragen und Auswirkungen fest.",
+          "Leitet Maßnahmen ab: beibehalten, anpassen, neu lösen oder die Anforderung erneut prüfen. Benennt Verantwortliche und Abhängigkeiten."
+        ]
+      },
+      {
+        "id": "fit-gap-s3",
+        "heading": "Grenzen transparent halten",
+        "paragraphs": [
+          "Eine bestehende Funktion kann fachlich passen und trotzdem qualitative oder rechtliche Lücken haben. Prüft deshalb auch Daten, Schnittstellen und Qualität.",
+          "Eine als Gap markierte Funktion muss nicht automatisch neu gebaut werden. Prozessanpassung oder bestehende Standardfunktionen können Alternativen sein."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Reporting ablösen",
+      "text": "Soll: Ein abgestimmter Wochenbericht steht ohne manuelles Zusammenführen bereit. Ist: Daten werden in Excel gesammelt. Die Lücke ist die fehlende automatisierte Zusammenführung. Mögliche Maßnahmen werden auf Nutzen, Aufwand und vorhandene Systemfunktionen geprüft."
+    },
+    "takeaway": "Ein Gap ist eine nachvollziehbare Abweichung vom vereinbarten Soll, noch keine Entscheidung für eine bestimmte Lösung.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 34–35"
+      }
+    ]
+  },
+  {
+    "id": "heatmap",
+    "categoryId": "re-praxis",
+    "title": "Heatmaps zur Bewertung",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Bewertungen sichtbar machen und Handlungsbedarf diskutieren, ohne die Kriterien hinter Farben zu verstecken.",
+    "sections": [
+      {
+        "id": "heatmap-s1",
+        "heading": "Dimensionen und Skala festlegen",
+        "paragraphs": [
+          "Eine Heatmap stellt Bewertungen farblich dar. Für Risiken können etwa Auswirkung und Eintrittswahrscheinlichkeit die Achsen bilden. Für Priorisierung sind andere Dimensionen wie Nutzen und Aufwand möglich.",
+          "Vermischt unterschiedliche Bewertungsmodelle nicht stillschweigend. Definiert vorab, was „hoch“, „mittel“ und „gering“ jeweils bedeuten."
+        ]
+      },
+      {
+        "id": "heatmap-s2",
+        "heading": "Bewerten und begründen",
+        "paragraphs": [
+          "Tragt Themen ein, begründet die Einschätzungen und macht unsichere Annahmen sichtbar. Ergänzt jede Farbmarkierung um eine textliche Bewertung, damit sie unabhängig von Farbwahrnehmung verständlich bleibt."
+        ]
+      },
+      {
+        "id": "heatmap-s3",
+        "heading": "Von der Übersicht zur Maßnahme",
+        "paragraphs": [
+          "Die Übersicht unterstützt den Fokus. Entscheidungen brauchen zusätzlich Verantwortliche, Maßnahmen, Abhängigkeiten und gegebenenfalls weitere Analyse.",
+          "Farben erzeugen keine Objektivität. Auch ein seltenes Ereignis kann bei schwerwiegenden Folgen besondere Behandlung erfordern."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Risiken einer Kundenplattform",
+      "text": "Das Team bewertet eine mögliche Datenschutzverletzung nach vereinbarten Kriterien für Auswirkung und Wahrscheinlichkeit. Es dokumentiert die Einstufung als Text sowie Maßnahmen und Verantwortlichkeit, statt nur eine rote Zelle einzufärben."
+    },
+    "takeaway": "Eine Heatmap visualisiert eine Bewertung. Aussagekraft entsteht durch klare Kriterien, Begründungen und daraus abgeleitete Maßnahmen.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 36–38"
+      }
+    ]
+  },
+  {
+    "id": "rovo",
+    "categoryId": "re-praxis",
+    "title": "Rovo im RE-Alltag",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "KI-gestützte Suche, Chat und Agenten im Atlassian-Umfeld einordnen.",
+    "sections": [
+      {
+        "id": "rovo-s1",
+        "heading": "Mögliche Unterstützung",
+        "paragraphs": [
+          "Rovo unterstützt die Suche über verbundene Wissensquellen, Fragen in natürlicher Sprache und agentengestützte Arbeitsabläufe. Für RE können Zusammenfassungen, das Auffinden von Entscheidungen und erste Dokumentationsentwürfe hilfreich sein."
+        ]
+      },
+      {
+        "id": "rovo-s2",
+        "heading": "Voraussetzungen prüfen",
+        "paragraphs": [
+          "Die nutzbaren Funktionen hängen von der Atlassian-Umgebung, dem aktuellen Tarif und freigegebenen Verbindungen ab. Prüft die Bedingungen vor einem Einsatz, statt aus der Präsentation eine dauerhafte Leistungszusage abzuleiten.",
+          "Gepflegte Quellen, sinnvolle Verlinkungen und passende Zugriffsrechte bestimmen den Nutzen. KI darf nicht als Ersatz für Berechtigungs- und Datenpflege verstanden werden."
+        ]
+      },
+      {
+        "id": "rovo-s3",
+        "heading": "Ergebnisse fachlich kontrollieren",
+        "paragraphs": [
+          "Prüft Zusammenfassungen und Vorschläge gegen die Quellen. Eine KI-Antwort kann unvollständig oder falsch sein und belegt weder Regelkonformität noch korrekte Anforderungen.",
+          "Vor automatischen Änderungen werden Zuständigkeiten und Freigaben vereinbart. Auch Datenschutz, angebundene Datenquellen und Nutzungsvorgaben müssen geklärt sein."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Entscheidungen für ein Refinement finden",
+      "text": "Ein RE lässt relevante Entscheidungen zu einer Schnittstelle zusammensuchen. Er öffnet die Originalquellen, prüft ihren Stand und verwendet erst danach die bestätigten Ergebnisse für die Vorbereitung."
+    },
+    "takeaway": "KI kann Suche und Vorarbeit unterstützen. Fachliche Bewertung und Verantwortung bleiben beim Team.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 39–42"
+      }
+    ]
+  },
+  {
+    "id": "story-mapping",
+    "categoryId": "re-praxis",
+    "title": "User Story Mapping mit Avion oder Whiteboard",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Die Nutzerreise sichtbar machen und daraus sinnvolle Lieferumfänge schneiden.",
+    "sections": [
+      {
+        "id": "story-mapping-s1",
+        "heading": "Aktivitäten und Stories ordnen",
+        "paragraphs": [
+          "Ordnet die wesentlichen Aktivitäten entlang der Nutzerreise horizontal an. Unter den Aktivitäten sammelt ihr konkrete Aufgaben und mögliche Stories.",
+          "Betrachtet den durchgängigen Ablauf statt nur einer ungeordneten Sammlung von Funktionen."
+        ]
+      },
+      {
+        "id": "story-mapping-s2",
+        "heading": "Lieferumfänge schneiden",
+        "paragraphs": [
+          "Gruppiert Stories zu Release-Schnitten, die einen nachvollziehbaren Nutzungsablauf ermöglichen. Ein MVP sollte einen sinnvollen ersten Nutzen bieten.",
+          "Prüft dabei Abhängigkeiten und notwendige Qualität. Die oberste Reihe einer Map ist nicht automatisch ein vollständiger Lieferumfang."
+        ]
+      },
+      {
+        "id": "story-mapping-s3",
+        "heading": "Werkzeug passend wählen",
+        "paragraphs": [
+          "Avion ist ein Werkzeug für User Story Mapping und Verbindungen zu Entwicklungstools. Die Methode lässt sich auch mit Miro, Mural oder Karten durchführen.",
+          "Integrationen, Berechtigungen und der aktuelle Funktionsumfang werden im eigenen Projekt geprüft. Eine Map ist eine Diskussionsgrundlage und muss mit dem Backlog abgestimmt bleiben."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Einkauf als Reise",
+      "text": "Die Aktivitäten lauten „Produkt finden“, „Bestellen“ und „Bestellung verfolgen“. Ein erster Release-Schnitt ermöglicht einen einfachen durchgängigen Kauf. Zusätzliche Komfortfunktionen kommen später, ohne dass grundlegende Zahlungs- oder Berechtigungsanforderungen entfallen."
+    },
+    "takeaway": "Story Mapping verbindet Einzelanforderungen mit einem Nutzerablauf. Das Werkzeug ist austauschbar, das gemeinsame Verständnis nicht.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 43–45"
+      }
+    ]
+  },
+  {
+    "id": "kano",
+    "categoryId": "re-praxis",
+    "title": "Das Kano-Modell",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Unterscheiden, wie Anforderungen auf die Zufriedenheit von Nutzenden wirken.",
+    "sections": [
+      {
+        "id": "kano-s1",
+        "heading": "Unterschiedliche Wirkungen",
+        "paragraphs": [
+          "Basismerkmale werden vorausgesetzt; ihr Fehlen erzeugt Unzufriedenheit. Leistungsmerkmale steigern mit besserer Erfüllung typischerweise die Zufriedenheit. Begeisterungsmerkmale werden nicht erwartet, können aber positiv überraschen.",
+          "Daneben gibt es unerhebliche Merkmale und Merkmale, die bei bestimmten Nutzenden Ablehnung auslösen. Nicht jede zusätzliche Funktion ist deshalb automatisch wertvoll."
+        ]
+      },
+      {
+        "id": "kano-s2",
+        "heading": "Nutzende befragen",
+        "paragraphs": [
+          "Betrachtet pro Merkmal sowohl sein Vorhandensein als auch sein Fehlen. Wertet die Antworten nach einer vereinbarten Kano-Systematik aus und berücksichtigt unterschiedliche Nutzergruppen.",
+          "Eine interne Vermutung ersetzt keine belastbare Rückmeldung. Erwartungen können sich außerdem mit der Zeit verändern."
+        ]
+      },
+      {
+        "id": "kano-s3",
+        "heading": "Zur Priorisierung beitragen",
+        "paragraphs": [
+          "Stellt notwendige Basismerkmale sicher und betrachtet Nutzen, Aufwand, Risiken und strategische Ziele gemeinsam. Kano ist eine Perspektive auf Zufriedenheit, kein vollständiger Priorisierungsalgorithmus."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Kundenportal beurteilen",
+      "text": "Sicherer Zugriff wird von Nutzenden häufig vorausgesetzt. Eine bessere Suchgeschwindigkeit kann Zufriedenheit steigern. Eine unerwartet hilfreiche Erinnerung kann begeistern. Diese Einordnung ist zunächst eine Hypothese und wird mit den tatsächlichen Nutzergruppen geprüft."
+    },
+    "takeaway": "Kano hilft, Erwartungen zu unterscheiden. Prüfe die Einordnung mit Nutzenden und verbinde sie mit weiteren Entscheidungskriterien.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 46–50"
+      }
+    ]
+  },
+  {
+    "id": "impact-mapping",
+    "categoryId": "re-praxis",
+    "title": "Impact Mapping",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Features mit Geschäftszielen und einer erwünschten Verhaltensänderung verbinden.",
+    "sections": [
+      {
+        "id": "impact-mapping-s1",
+        "heading": "Vier Ebenen",
+        "paragraphs": [
+          "Ziel: Was wollen wir messbar erreichen? Akteure: Wer kann das Ziel beeinflussen? Wirkung: Welches Verhalten dieser Akteure hilft dabei? Ergebnisse oder Maßnahmen: Was könnte dieses Verhalten ermöglichen?",
+          "Eine Wirkung ist eine Veränderung im Verhalten, nicht bloß der Name eines Features."
+        ]
+      },
+      {
+        "id": "impact-mapping-s2",
+        "heading": "Gemeinsam erarbeiten",
+        "paragraphs": [
+          "Beginnt mit einem konkreten Ziel und sammelt Akteure sowie mögliche Verhaltensänderungen. Erst danach entstehen Lösungsideen.",
+          "Vergleicht die Annahmen zu Wirkung und Aufwand. Definiert, woran ihr erkennen könnt, ob eine Maßnahme tatsächlich zum Ziel beiträgt."
+        ]
+      },
+      {
+        "id": "impact-mapping-s3",
+        "heading": "Annahmen regelmäßig überprüfen",
+        "paragraphs": [
+          "Eine Map macht die vermutete Verbindung zwischen Maßnahme und Ziel sichtbar, beweist sie aber nicht. Messungen und Rückmeldungen können eine neue Priorisierung erforderlich machen."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine Lade-App verbessern",
+      "text": "Ziel im Lernbeispiel: mehr monatlich aktive Nutzende. Akteure: Fahrerinnen und Fahrer. Erwünschtes Verhalten: passende Ladestationen verlässlicher finden und die App wiederverwenden. Ein möglicher Beitrag ist eine aktuelle Verfügbarkeitsanzeige. Ob sie die Nutzung steigert, muss überprüft werden."
+    },
+    "takeaway": "Frage vor jeder Lösung nach Ziel, Akteur und erwünschter Verhaltensänderung. Behandle die erwartete Wirkung als prüfbare Annahme.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 51–54"
+      }
+    ]
+  },
+  {
+    "id": "sieben-produktfragen",
+    "categoryId": "re-praxis",
+    "title": "Die sieben Produktfragen",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Eine kompakte Gesprächsstruktur, um vor der Ausarbeitung einer Lösung Klarheit zu schaffen.",
+    "sections": [
+      {
+        "id": "sieben-produktfragen-s1",
+        "heading": "Nutzer, Problem und Erfolg",
+        "paragraphs": [
+          "1. Wer ist der Nutzer oder die Nutzerin? 2. Welches Problem lösen wir? 3. Woran erkennen wir Erfolg?",
+          "Beschreibt eine konkrete Situation und prüfbare Erfolgskriterien, statt nur den gewünschten Funktionsnamen zu wiederholen."
+        ]
+      },
+      {
+        "id": "sieben-produktfragen-s2",
+        "heading": "Folgen, Grenzen und Alternativen",
+        "paragraphs": [
+          "4. Was passiert, wenn wir nichts tun? 5. Welche Randbedingungen gelten? 6. Welche Alternativen gibt es?",
+          "Betrachtet neben einer neuen Softwarefunktion auch Prozessänderungen oder vorhandene Hilfsmittel. Nicht jede Alternative ist gleich wirksam oder aufwendig."
+        ]
+      },
+      {
+        "id": "sieben-produktfragen-s3",
+        "heading": "Risiken und nächste Klärung",
+        "paragraphs": [
+          "7. Welche Risiken bestehen? Haltet offene Annahmen und die nächste notwendige Klärung fest. Die Fragen schaffen eine strukturierte Grundlage, ersetzen aber keine vollständige Analyse."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein Onboarding verbessern",
+      "text": "Neue Nutzende scheitern an der Einrichtung. Erfolg könnte bedeuten, dass mehr Personen ohne Support starten. Das Team prüft Folgen des Nichtstuns, Datenschutzvorgaben, eine geführte Einrichtung als Alternative zur Anleitung und das Risiko falscher Gerätedaten."
+    },
+    "takeaway": "Kläre für wen, warum und mit welchem Erfolg gearbeitet wird. Beziehe Nichtstun, Grenzen, Alternativen und Risiken ein.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 55–56"
+      }
+    ]
+  },
+  {
+    "id": "event-storming",
+    "categoryId": "re-praxis",
+    "title": "Event Storming",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Fachliche Ereignisse gemeinsam sammeln, um Prozesse, Lücken und offene Regeln zu erkennen.",
+    "sections": [
+      {
+        "id": "event-storming-s1",
+        "heading": "Mit Geschehenem beginnen",
+        "paragraphs": [
+          "Schreibt Ereignisse in der Vergangenheitsform auf, etwa „Bestellung abgeschickt“ oder „Zahlung eingegangen“. Ordnet sie gemeinsam zeitlich und fachlich ein.",
+          "Die Darstellung beginnt mit dem fachlichen Ablauf, nicht mit einer Festlegung auf Kafka oder eine andere technische Architektur."
+        ]
+      },
+      {
+        "id": "event-storming-s2",
+        "heading": "Lücken sichtbar machen",
+        "paragraphs": [
+          "Fragt bei Übergängen nach: Was löst das Ereignis aus? Welche Regel gilt? Wer oder was reagiert? Was passiert bei Fehlern?",
+          "Markiert Unklarheiten und beteiligt die Menschen, die den tatsächlichen Prozess kennen. Je nach Ziel können später weitere Elemente ergänzt werden."
+        ]
+      },
+      {
+        "id": "event-storming-s3",
+        "heading": "Erkenntnisse weiterverarbeiten",
+        "paragraphs": [
+          "Übertragt bestätigte Regeln und offene Punkte in die fachliche Dokumentation und das Backlog. Eine Wand mit Ereigniskarten ist noch keine vollständige oder freigegebene Spezifikation."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Eine fehlgeschlagene Zahlung",
+      "text": "Zwischen „Bestellung abgeschickt“ und „Bestellung versendet“ steht „Zahlung eingegangen“. Das Team fragt, wie eine fehlgeschlagene Zahlung behandelt wird, und entdeckt eine bislang ungeklärte Benachrichtigungs- und Stornoregel."
+    },
+    "takeaway": "Gemeinsam geordnete Ereignisse helfen, fachliche Abläufe zu verstehen. Kläre auch Ausnahmen und leite konkrete nächste Schritte ab.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 57–58"
+      }
+    ]
+  },
+  {
+    "id": "gherkin",
+    "categoryId": "re-praxis",
+    "title": "Gherkin: Verhalten als Szenario beschreiben",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Akzeptanzkriterien mit klaren Vorbedingungen, einem Auslöser und einem beobachtbaren Ergebnis ausdrücken.",
+    "sections": [
+      {
+        "id": "gherkin-s1",
+        "heading": "Die Struktur verstehen",
+        "paragraphs": [
+          "Feature beschreibt die Fähigkeit, Scenario einen konkreten Fall. Given nennt Vorbedingungen, When den Auslöser und Then das erwartete Ergebnis.",
+          "Gherkin unterstützt auch deutsche Schlüsselwörter. Mit „# language: de“ sind beispielsweise „Funktionalität“, „Szenario“, „Angenommen“, „Wenn“ und „Dann“ nutzbar."
+        ]
+      },
+      {
+        "id": "gherkin-s2",
+        "heading": "Konkrete Ergebnisse formulieren",
+        "paragraphs": [
+          "Beschreibe beobachtbares Verhalten statt unklarer Aussagen wie „alles funktioniert“. Trenne Fälle, die unterschiedliche Regeln prüfen.",
+          "Ergänze bei Bedarf fehlende Berechtigungen, ungültige Daten oder andere relevante Ausnahmen. Vermeide es, jeden technischen Klick als fachliche Anforderung festzuschreiben."
+        ]
+      },
+      {
+        "id": "gherkin-s3",
+        "heading": "Beschreibung und Test unterscheiden",
+        "paragraphs": [
+          "Ein lesbares Szenario ist eine gemeinsame fachliche Grundlage. Automatisch ausführbar wird es erst mit einer passenden Testumgebung und implementierten Schritten.",
+          "Die Struktur allein garantiert weder Vollständigkeit noch fehlerfreie Umsetzung. Fachbereich, Entwicklung und Test prüfen die Szenarien gemeinsam."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ein eigenes Vertragsdokument laden",
+      "text": "Angenommen eine Kundin ist angemeldet und besitzt einen Vertrag mit verfügbarem PDF. Wenn sie das Dokument dieses Vertrags anfordert, dann erhält sie die zugehörige PDF-Datei. Ein gesondertes Szenario prüft den verweigerten Zugriff auf einen fremden Vertrag."
+    },
+    "takeaway": "Ein gutes Szenario verbindet Ausgangssituation, Auslöser und prüfbares Ergebnis. Die Form ersetzt keine fachliche Abstimmung.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 59–60"
+      }
+    ]
+  },
+  {
+    "id": "sechs-denkhuete",
+    "categoryId": "re-praxis",
+    "title": "Die sechs Denkhüte",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Ein Thema bewusst aus verschiedenen Perspektiven betrachten, um Anforderungen umfassender zu klären.",
+    "sections": [
+      {
+        "id": "sechs-denkhuete-s1",
+        "heading": "Die Perspektiven",
+        "paragraphs": [
+          "Weiß steht für Fakten und Wissenslücken, Rot für Gefühle und subjektive Wahrnehmung, Schwarz für begründete Risiken und Gelb für Nutzen und Chancen.",
+          "Grün sammelt neue Möglichkeiten und Alternativen. Blau strukturiert das Vorgehen, bündelt Erkenntnisse und klärt nächste Schritte."
+        ]
+      },
+      {
+        "id": "sechs-denkhuete-s2",
+        "heading": "Als Team einsetzen",
+        "paragraphs": [
+          "Betrachtet ein Thema nacheinander aus den vereinbarten Perspektiven. Alle dürfen jede Perspektive nutzen; die Hüte ordnen keine festen Persönlichkeitstypen zu.",
+          "Trennt Sammlung und Bewertung. So bekommen auch Nutzergefühle, Chancen und neue Ideen Raum, bevor die Gruppe entscheidet."
+        ]
+      },
+      {
+        "id": "sechs-denkhuete-s3",
+        "heading": "Ergebnisse konkretisieren",
+        "paragraphs": [
+          "Fasst Fakten, Annahmen, Risiken, Alternativen und offene Entscheidungen zusammen. Leitet daraus Klärungen und Anforderungen ab.",
+          "Die Methode strukturiert Gespräche, entscheidet aber nicht automatisch, welches Feature gebaut werden soll."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Push-Nachrichten beurteilen",
+      "text": "Weiß klärt mögliche Statuswechsel. Rot sammelt das Gefühl von Sicherheit oder Störung. Schwarz betrachtet sensible Daten auf dem Sperrbildschirm. Gelb benennt weniger manuelle Nachfragen, Grün schlägt auswählbare Kanäle vor und Blau hält Entscheidungen sowie offene Punkte fest."
+    },
+    "takeaway": "Wechsle bewusst die Perspektive und dokumentiere die Erkenntnisse. Gute Moderation führt von Meinungen zu konkreten Klärungen.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 61–63"
+      }
+    ]
+  },
+  {
+    "id": "fuenf-warum",
+    "categoryId": "re-praxis",
+    "title": "Die 5-Why-Methode",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Durch wiederholtes Nachfragen vom ersten Lösungswunsch zum zugrunde liegenden Problem kommen.",
+    "sections": [
+      {
+        "id": "fuenf-warum-s1",
+        "heading": "Warum mehrfach fragen?",
+        "paragraphs": [
+          "Ein Wunsch wie „Wir brauchen einen Button“ beschreibt eine Lösungsidee. Mehrfaches Nachfragen nach dem Warum kann die Folgen und den eigentlichen Bedarf sichtbar machen.",
+          "Die Zahl fünf ist eine Orientierung, kein vorgeschriebenes Ziel. Stoppe nicht künstlich nach fünf Fragen und frage nicht ohne Erkenntnisgewinn weiter."
+        ]
+      },
+      {
+        "id": "fuenf-warum-s2",
+        "heading": "Respektvoll und faktenbezogen bleiben",
+        "paragraphs": [
+          "Formuliere Fragen ohne Schuldzuweisung und prüfe die Antworten an konkreten Fällen. Komplexe Probleme können mehrere Ursachen haben.",
+          "Halte Annahmen und belegte Ursachen auseinander. Das gemeinsame Ziel ist Verständnis, nicht ein Verhör oder die Bestätigung einer schon bevorzugten Lösung."
+        ]
+      },
+      {
+        "id": "fuenf-warum-s3",
+        "heading": "Vom Bedarf zu Alternativen",
+        "paragraphs": [
+          "Fasse das zugrunde liegende Problem und das gewünschte Ergebnis zusammen. Vergleiche dann mögliche Lösungen, bevor du Anforderungen konkretisierst."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Passwort zurücksetzen",
+      "text": "Warum ein neuer Button? Nutzende vergessen ihr Passwort. Warum ist das problematisch? Sie verlieren den Zugang und müssen auf den Support warten. Der Bedarf ist selbstständiger, verlässlicher Wiederzugang. Welche Lösung das am besten ermöglicht, wird anschließend geprüft."
+    },
+    "takeaway": "Wiederholtes Warum hilft beim Verständnis. Die Antworten brauchen Kontext und Nachweise; eine einzige Ursachenlinie ist nicht immer ausreichend.",
+    "sources": [
+      {
+        "documentId": "toolbox",
+        "locator": "Folien 64–65"
+      }
+    ]
+  },
+  {
+    "id": "tool-landschaft",
+    "categoryId": "re-praxis",
+    "title": "Werkzeuge im RE-Projekt auswählen",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Ticketverwaltung, Dokumentation, Modellierung und Zusammenarbeit erfüllen verschiedene Zwecke.",
+    "sections": [
+      {
+        "id": "tool-landschaft-s1",
+        "heading": "Anforderungen und Wissen verwalten",
+        "paragraphs": [
+          "Jira oder Azure DevOps unterstützen Backlogs und Umsetzung. Confluence oder andere Wissensplattformen halten Kontext, Entscheidungen und Spezifikationen fest. Klärt die verbindliche Quelle und sinnvolle Verlinkungen.",
+          "IBM Engineering Requirements Management und Polarion sind Beispiele für spezialisierte Anforderungs- beziehungsweise ALM-Werkzeuge. Der Nutzen hängt unter anderem von Nachverfolgbarkeit, Prozessen und Integrationen ab."
+        ]
+      },
+      {
+        "id": "tool-landschaft-s2",
+        "heading": "Zusammenarbeit und Modelle unterstützen",
+        "paragraphs": [
+          "Trello oder Asana können einfache Aufgabenübersichten abbilden. SharePoint und Teams unterstützen Dokumentenablage und Zusammenarbeit. Miro und Mural helfen bei visuellen Workshops.",
+          "BPMN lässt sich beispielsweise in Signavio, Camunda Modeler oder passenden Diagrammwerkzeugen modellieren. Ein Modellierungswerkzeug und eine ausführbare Prozessplattform haben unterschiedliche Aufgaben."
+        ]
+      },
+      {
+        "id": "tool-landschaft-s3",
+        "heading": "Auswahlkriterien vereinbaren",
+        "paragraphs": [
+          "Vergleicht Bedarf, Bedienbarkeit, Schnittstellen, Berechtigungen, Nachverfolgbarkeit, Pflege und Kosten. Prüft aktuelle Produktfähigkeiten statt pauschaler Anbieterbewertungen.",
+          "Ein Werkzeug löst unklare Zuständigkeiten oder widersprüchliche Anforderungen nicht automatisch. Führt es zusammen mit einem abgestimmten Arbeitsablauf ein."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Ticket und Entscheidung verbinden",
+      "text": "Eine Story liegt im Backlog-System, die begründete Fachentscheidung in der Wissensplattform. Beide werden verlinkt. Das Team vereinbart, wo Status und Akzeptanzkriterien verbindlich gepflegt werden, damit keine widersprüchlichen Kopien entstehen."
+    },
+    "takeaway": "Wähle Werkzeuge nach Aufgaben und Prozessen. Pflege Verantwortlichkeiten und die Verbindung zwischen Wissen, Anforderungen und Tests.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Tools im Einsatz; Prozesse beim Kunden einführen"
+      }
+    ]
+  },
+  {
+    "id": "priorisierung-vertiefen",
+    "categoryId": "re-praxis",
+    "title": "Weitere Priorisierungs- und Bewertungsverfahren",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Eine kompakte Orientierung für Entscheidungen mit mehreren Kriterien.",
+    "sections": [
+      {
+        "id": "priorisierung-vertiefen-s1",
+        "heading": "Schnelle Gruppenverfahren",
+        "paragraphs": [
+          "Bei der 100-Dollar-Methode verteilen Stakeholder ein fiktives Budget auf Anforderungen. Dot-Voting verteilt Stimmen. Beide machen Präferenzen sichtbar, beweisen aber keinen objektiven Nutzen.",
+          "Beim paarweisen Vergleich werden jeweils zwei Optionen gegenübergestellt. Das erlaubt eine differenzierte Reihenfolge, benötigt bei vielen Optionen aber viel Zeit."
+        ]
+      },
+      {
+        "id": "priorisierung-vertiefen-s2",
+        "heading": "Nutzen, Aufwand und Verzögerung",
+        "paragraphs": [
+          "Eine Nutzen-Aufwand-Matrix ordnet Optionen entlang vereinbarter Skalen. Nutzwertanalyse oder Scorecards bewerten Alternativen anhand gewichteter Kriterien. Annahmen und Gewichte müssen nachvollziehbar bleiben.",
+          "WSJF setzt relative Verzögerungskosten ins Verhältnis zur Größe beziehungsweise Dauer der Arbeit. Im SAFe-Kontext werden dafür unter anderem Geschäftswert, Zeitkritikalität und Risikoreduktion betrachtet. Die Kurzform „Business Value / Job Size“ allein ist dafür unvollständig."
+        ]
+      },
+      {
+        "id": "priorisierung-vertiefen-s3",
+        "heading": "Kosten und Umfeld einbeziehen",
+        "paragraphs": [
+          "Eine Kosten-Nutzen-Analyse betrachtet erwartete Vorteile und Kosten, hat bei schwer messbaren Faktoren aber Grenzen. SWOT strukturiert Stärken, Schwächen, Chancen und Risiken.",
+          "Keine Zahlenbewertung beseitigt Unsicherheit. Prüft Sensitivität, Risiken, Pflichten und Abhängigkeiten, bevor ihr eine Rangfolge als Entscheidung verwendet."
+        ]
+      }
+    ],
+    "example": {
+      "title": "Zwei Funktionen vergleichen",
+      "text": "Ein Team bewertet zwei Funktionen anhand von Nutzen, Risiko und Aufwand. Es dokumentiert Schätzunsicherheiten und prüft, ob eine kleine Änderung der Gewichte die Reihenfolge kippt. So wird sichtbar, wo weitere Klärung hilfreicher ist als zusätzliche Dezimalstellen."
+    },
+    "takeaway": "Die passende Methode hängt von der Entscheidung ab. Sichtbare Annahmen und begründete Kriterien sind wichtiger als scheinbar exakte Zahlen.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Priorisierungsmethoden; Bewertungsmethoden, WSJF präzisiert"
+      }
+    ]
+  },
+  {
+    "id": "methoden-kompass",
+    "categoryId": "re-praxis",
+    "title": "Methoden für Erhebung, Modelle und Abstimmung",
+    "duration": 4,
+    "status": "available",
+    "format": "knowledge",
+    "introduction": "Eine Orientierung, welche Arbeitsweise bei welcher Frage helfen kann.",
+    "sections": [
+      {
+        "id": "methoden-kompass-s1",
+        "heading": "Bedarf erheben und früh prüfen",
+        "paragraphs": [
+          "Interviews erlauben gezielte Rückfragen, Beobachtung zeigt den tatsächlichen Arbeitsablauf und Workshops verbinden unterschiedliche Perspektiven. Fragebögen erreichen größere Gruppen, bieten aber weniger Raum für unmittelbare Rückfragen.",
+          "Prototypen und Mockups machen Lösungsideen besprechbar. Sie helfen beim frühen Feedback, sind jedoch keine Zusage über die fertige Funktion. Design Thinking unterstützt eine iterative, nutzerorientierte Lösungssuche."
+        ]
+      },
+      {
+        "id": "methoden-kompass-s2",
+        "heading": "Abläufe und Verantwortung beschreiben",
+        "paragraphs": [
+          "BPMN modelliert Geschäftsprozesse; Kontextdiagramme zeigen Systemgrenzen, Beteiligte und Schnittstellen. Wählt die Darstellung passend zur offenen Frage.",
+          "RACI unterscheidet ausführende Verantwortung (Responsible), Ergebnisverantwortung (Accountable), beratend Einbezogene (Consulted) und zu Informierende (Informed). Klärt die Rollen für konkrete Aufgaben, statt nur eine große Tabelle zu erstellen."
+        ]
+      },
+      {
+        "id": "methoden-kompass-s3",
+        "heading": "Abstimmung und Qualität sichern",
+        "paragraphs": [
+          "Peer Reviews prüfen Anforderungen mit anderen Beteiligten. Abnahmeworkshops betrachten fachliche Ergebnisse. Feedbackschleifen helfen, Annahmen kontinuierlich zu überprüfen.",
+          "Wählt Formate nach Ziel und Bedarf und plant die Nachbereitung: Welche Entscheidung wurde getroffen, was bleibt offen und wer übernimmt den nächsten Schritt?"
+        ]
+      }
+    ],
+    "example": {
+      "title": "Einen Freigabeprozess klären",
+      "text": "Das Team beobachtet den heutigen Ablauf, modelliert die Schritte und Schnittstellen und klärt mit RACI die Entscheidungskompetenz. Ein einfacher Prototyp macht die spätere Anzeige besprechbar. Ergebnisse und offene Fragen werden anschließend festgehalten."
+    },
+    "takeaway": "Erhebung, Modellierung und Abstimmung ergänzen sich. Nutze eine Methode, weil sie eine konkrete Frage klärt.",
+    "sources": [
+      {
+        "documentId": "cookbook",
+        "locator": "Methoden im Detail; Dokumentations- und Strukturierungsmethoden; Kommunikationsprozesse"
+      }
+    ]
+  }
+]
